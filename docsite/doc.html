@@ -1,0 +1,918 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../components/assets/brand-logo/logo.png" type="image/png">
+    <link rel="stylesheet" href="https://temp-ui.netlify.app/style.css"/>
+    <link rel="stylesheet" href="../style.css">
+    <title>FreshUI</title>
+</head>
+<body>
+    <!-- Start of Navigation -->
+    <div class="grid-container">
+        <nav class="nav-bar shadow-box">
+            <!-- Left Navigation Section -->
+            <div class="nav-section">
+                <div class="logo">
+                    <a href="../index.html" >
+                        <img src="../components/assets/brand-logo/logo.png" alt="logo">
+                    </a>
+                    <span class="brand-text">FRESHUI</span>
+                </div>
+                <ul class="list-style-none nav-section-items">
+                    <li class="list-inline-item margin-l margin-r">
+                        <a href="../index.html" class="link-style-none nav-item-style ">Home</a>
+                    </li>
+                    <li class="list-inline-item margin-l">
+                        <a href="#" class="link-style-none nav-item-style ">Documentation</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- Right Navigation Section -->
+            <div class="nav-section">
+               <ul class="list-style-none nav-section-items">
+                    <li class="list-inline-item">
+                        <a href="https://github.com/deekshithmd" class="nav-icon-link link-style-none">
+                            <span class="margin-r"><i class="fab fa-github nav-icon"></i></span>  
+                        </a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a href="https://in.linkedin.com/in/deekshith-m-d-42a306154" class="nav-icon-link link-style-none">
+                            <span class="margin-r"><i class="fab fa-linkedin nav-icon"></i></span>
+                        </a>
+                    </li>
+               </ul> 
+            </div>
+        </nav>
+        <!-- End of Navigation -->
+   
+        <aside class="sidebar"> 
+            <ul class="component-list">
+                <h2 class="subtitle-1 text-underline">Components</h2>
+                <li class="component-item text-2xl"><a href="#alert" class="link-style-none">Alert</a></li>
+                <li class="component-item text-2xl"><a href="#avatar" class="link-style-none">Avatar</a></li>
+                <li class="component-item text-2xl"><a href="#badge" class="link-style-none">Badge</a></li>
+                <li class="component-item text-2xl"><a href="#button" class="link-style-none">Button</a></li>
+                <li class="component-item text-2xl"><a href="#card" class="link-style-none">Card</a></li>
+                <li class="component-item text-2xl"><a href="#image" class="link-style-none">Image</a></li>
+                <li class="component-item text-2xl"><a href="#input" class="link-style-none">Input</a></li>
+            </ul>
+        </aside>
+        <div class="main">
+            <div class="component-container" id="alert">
+                <h1 class="text-underline">Alerts</h1>
+                <p class="text-3xl">Alert is an message used to attract users attention and give important information about the user's action</p>
+                <div class="component-item-container">
+                    <h3>Basic alerts</h2>
+                    <p class="text-2xl">These are alerts with basic style and functionalities</p>
+                    <section class="sample-container">
+                        <div class="alert-container alert-primary-solid">
+                            <span><i class="margin-r fa fa-info-circle"></i></span>
+                            3 messages in incontainer
+                        </div>
+                        <div class="alert-container alert-success-solid">
+                            <span><i class="margin-r fas fa-check-circle"></i></span>
+                            Congratulations! Successfully subscribed.
+                        </div>
+                        <div class="alert-container alert-danger-solid">
+                            <span><i class="margin-r fas fa-exclamation-triangle"></i></span>
+                            Error! Database connection failed.
+                        </div>
+                        <div class="alert-container alert-warning-solid">
+                            <span><i class="margin-r fas fa-exclamation-triangle"></i></span>
+                            Warning! There was problem in your connection.
+                        </div>
+                    </section>
+                    <section class="code-section">
+                        <code>
+                            <iframe
+                                src="https://carbon.now.sh/embed?bg=rgba%28249%2C237%2C212%2C1%29&t=base16-dark&wt=sharp&l=auto&width=990&ds=true&dsyoff=0px&dsblur=0px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=IBM+Plex+Mono&fs=14px&lh=143%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522alert-container%2520alert-primary-solid%2522%253E%250A%2509%253Cspan%253E%253Ci%2520class%253D%2522margin-r%2520fa%2520fa-info-circle%2522%253E%253C%252Fi%253E%253C%252Fspan%253E%250A%2520%25093%2520messages%2520in%2520incontainer%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522alert-container%2520alert-success-solid%2522%253E%250A%2509%253Cspan%253E%253Ci%2520class%253D%2522margin-r%2520fas%2520fa-check-circle%2522%253E%253C%252Fi%253E%253C%252Fspan%253E%250A%2520%2509Congratulations%21%2520Successfully%2520subscribed.%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522alert-container%2520alert-danger-solid%2522%253E%250A%2509%253Cspan%253E%253Ci%2520class%253D%2522margin-r%2520fas%2520fa-exclamation-triangle%2522%253E%253C%252Fi%253E%253C%252Fspan%253E%250A%2509Error%21%2520Database%2520connection%2520failed.%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522alert-container%2520alert-warning-solid%2522%253E%250A%2509%253Cspan%253E%253Ci%2520class%253D%2522margin-r%2520fas%2520fa-exclamation-triangle%2522%253E%253C%252Fi%253E%253C%252Fspan%253E%250A%2509Warning%21%2520There%2520was%2520problem%2520in%2520your%2520connection.%250A%253C%252Fdiv%253E"
+                                style=" border:0; transform: scale(1); overflow:hidden;"
+                                sandbox="allow-scripts allow-same-origin">
+                            </iframe>
+                        </code>
+                    </section>
+                </div>
+                <div class="component-item-container">
+                    <h3>Closable alert</h2>
+                    <p class="text-2xl">This is the alert with closing functionality</p>
+                    <section class="sample-container">
+                        <div class="alert-container alert-warning-solid alert-warning-close">
+                            <span><i class="margin-r fas fa-exclamation-triangle"></i></span>
+                            Warning! There was problem in your connection.
+                            <button class="alert-close alert-warning-close-btn" onclick="this.parentElement.style.display='none'">&times;</button>
+                        </div>
+                    </section>
+                    <section class="code-section">
+                        <code>
+                            <iframe
+                                src="https://carbon.now.sh/embed?bg=rgba%28249%2C237%2C212%2C1%29&t=base16-dark&wt=sharp&l=auto&width=990&ds=true&dsyoff=0px&dsblur=0px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=IBM+Plex+Mono&fs=14px&lh=143%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522alert-container%2520alert-warning-solid%2520alert-warning-close%2522%253E%250A%2520%2520%2509%253Cspan%253E%253Ci%2520class%253D%2522margin-r%2520fas%2520fa-exclamation-triangle%2522%253E%253C%252Fi%253E%253C%252Fspan%253E%250A%2520%2520%2509Warning%21%2520There%2520was%2520problem%2520in%2520your%2520connection.%250A%2520%2520%2509%253Cbutton%2520class%253D%2522alert-close%2520alert-warning-close-btn%2522%2520%2509%2509%2509%2509%2520%2520%2520%2520%2520%2520%2520%2520%2509%2509%2509%2509%2509%2509%2509%2509%2509onclick%253D%2522this.parentElement.style.display%253D%27none%27%2522%253E%2526times%253B%253C%252Fbutton%253E%250A%253C%252Fdiv%253E"
+                                style=" border:0; transform: scale(1); overflow:hidden;"
+                                sandbox="allow-scripts allow-same-origin">
+                            </iframe>
+                        </code>
+                    </section>
+                </div>
+                <div class="component-item-container">
+                    <h3>Outlined alert</h2>
+                    <p class="text-2xl">These are the alerts which are containing specific coloured borders</p>
+                    <section class="sample-container">
+                        <div class="alert-container alert-primary-outline">
+                            <span><i class="margin-r fa fa-info-circle"></i></span>
+                            3 messages in incontainer.
+                        </div>
+                        <div class="alert-container alert-success-outline">
+                            <span><i class="margin-r fas fa-check-circle"></i></span>
+                            Congratulations! Successfully subscribed.
+                        </div>
+                        <div class="alert-container alert-danger-outline">
+                            <span><i class="margin-r fas fa-exclamation-triangle"></i></span>
+                            Error! Database connection failed.
+                        </div>
+                        <div class="alert-container alert-warning-outline">
+                            <span><i class="margin-r fas fa-exclamation-triangle"></i></span>
+                            Warning! There was problem in your connection.
+                        </div>
+                        <div class="alert-container alert-warning-outline alert-warning-close">
+                            <span><i class="margin-r fas fa-exclamation-triangle"></i></span>
+                            Warning! There was problem in your connection.
+                            <button class="alert-close alert-warning-close-btn" onclick="this.parentElement.style.display='none'">&times;</button>
+                        </div>
+                    </section>
+                    <section class="code-section">
+                        <code>
+                            <iframe
+                                src="https://carbon.now.sh/embed?bg=rgba%28249%2C237%2C212%2C1%29&t=base16-dark&wt=sharp&l=auto&width=990&ds=true&dsyoff=0px&dsblur=0px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=IBM+Plex+Mono&fs=14px&lh=143%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522alert-container%2520alert-primary-outline%2522%253E%250A%2509%253Cspan%253E%253Ci%2520class%253D%2522margin-r%2520fa%2520fa-info-circle%2522%253E%253C%252Fi%253E%253C%252Fspan%253E%250A%25093%2520messages%2520in%2520incontainer.%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522alert-container%2520alert-success-outline%2522%253E%250A%2509%253Cspan%253E%253Ci%2520class%253D%2522margin-r%2520fas%2520fa-check-circle%2522%253E%253C%252Fi%253E%253C%252Fspan%253E%250A%2509Congratulations%21%2520Successfully%2520subscribed.%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522alert-container%2520alert-danger-outline%2522%253E%250A%2509%253Cspan%253E%253Ci%2520class%253D%2522margin-r%2520fas%2520fa-exclamation-triangle%2522%253E%253C%252Fi%253E%253C%252Fspan%253E%250A%2509Error%21%2520Database%2520connection%2520failed.%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522alert-container%2520alert-warning-outline%2522%253E%250A%2509%253Cspan%253E%253Ci%2520class%253D%2522margin-r%2520fas%2520fa-exclamation-triangle%2522%253E%253C%252Fi%253E%253C%252Fspan%253E%250A%2509Warning%21%2520There%2520was%2520problem%2520in%2520your%2520connection.%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522alert-container%2520alert-warning-outline%2520alert-warning-close%2522%253E%250A%2509%253Cspan%253E%253Ci%2520class%253D%2522margin-r%2520fas%2520fa-exclamation-triangle%2522%253E%253C%252Fi%253E%253C%252Fspan%253E%250A%2509Warning%21%2520There%2520was%2520problem%2520in%2520your%2520connection.%250A%2509%253Cbutton%2520class%253D%2522alert-close%2520alert-warning-close-btn%2522%2520onclick%253D%2522this.parentElement.style.display%253D%27none%27%2522%253E%2526times%253B%2509%253C%252Fbutton%253E%250A%253C%252Fdiv%253E"
+                                style=" border:0; transform: scale(1); overflow:hidden;"
+                                sandbox="allow-scripts allow-same-origin">
+                            </iframe>
+                        </code>
+                    </section>
+                </div>
+                <div class="component-item-container">
+                    <h3>Link alert</h2>
+                    <p class="text-2xl">These are the alerts which are containing links to deal with the error or required action for the alert</p>
+                    <section class="sample-container">
+                        <div class="alert-container alert-primary-outline">
+                            <span><i class="margin-r fa fa-info-circle"></i></span>
+                            3 messages in incontainer.<a class="alert-link alert-link-primary" href="#">Click here for more information</a>
+                        </div>
+                        <div class="alert-container alert-success-outline">
+                            <span><i class="margin-r fas fa-check-circle"></i></span>
+                            Congratulations! Successfully subscribed.<a class="alert-link alert-link-success" href="#">Click here for more information</a>
+                        </div>
+                        <div class="alert-container alert-danger-outline">
+                            <span><i class="margin-r fas fa-exclamation-triangle"></i></span>
+                            Error! Database connection failed.<a class="alert-link alert-link-danger" href="#">Click here for more information</a>
+                        </div>
+                        <div class="alert-container alert-warning-outline">
+                            <span><i class="margin-r fas fa-exclamation-triangle"></i></span>
+                            Warning! There was problem in your connection.<a class="alert-link alert-link-warning" href="#">Click here for more information</a>
+                        </div>
+                        <div class="alert-container alert-warning-outline alert-warning-close">
+                            <span><i class="margin-r fas fa-exclamation-triangle"></i></span>
+                            Warning! There was problem in your connection.<a class="alert-link alert-link-warning" href="#">Click here for more information</a>
+                            <button class="alert-close alert-warning-close-btn" onclick="this.parentElement.style.display='none'">&times;</button>
+                        </div>
+                    </section>
+                    <section class="code-section">
+                        <code>
+                            <iframe
+                                src="https://carbon.now.sh/embed?bg=rgba%28249%2C237%2C212%2C1%29&t=base16-dark&wt=sharp&l=auto&width=990&ds=true&dsyoff=0px&dsblur=0px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=IBM+Plex+Mono&fs=14px&lh=143%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522alert-container%2520alert-primary-outline%2522%253E%250A%2509%253Cspan%253E%253Ci%2520class%253D%2522margin-r%2520fa%2520fa-info-circle%2522%253E%253C%252Fi%253E%253C%252Fspan%253E%250A%25093%2520messages%2520in%2520incontainer.%253Ca%2520class%253D%2522alert-link%2520alert-link-primary%2522%2520href%253D%2522%2523%2522%253EClick%2520here%2520for%2520more%2520information%253C%252Fa%253E%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522alert-container%2520alert-success-outline%2522%253E%250A%2509%253Cspan%253E%253Ci%2520class%253D%2522margin-r%2520fas%2520fa-check-circle%2522%253E%253C%252Fi%253E%253C%252Fspan%253E%250A%2509Congratulations%21%2520Successfully%2520subscribed.%253Ca%2520class%253D%2522alert-link%2520alert-link-success%2522%2520href%253D%2522%2523%2522%253EClick%2520here%2520for%2520more%2520%2520%2520%2520%2520information%253C%252Fa%253E%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522alert-container%2520alert-danger-outline%2522%253E%250A%2509%253Cspan%253E%253Ci%2520class%253D%2522margin-r%2520fas%2520fa-exclamation-triangle%2522%253E%253C%252Fi%253E%253C%252Fspan%253E%250A%2509Error%21%2520Database%2520connection%2520failed.%253Ca%2520class%253D%2522alert-link%2520alert-link-danger%2522%2520href%253D%2522%2523%2522%253EClick%2520here%2520for%2520more%2520%2509%2509%2509information%253C%252Fa%253E%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522alert-container%2520alert-warning-outline%2522%253E%250A%2509%253Cspan%253E%253Ci%2520class%253D%2522margin-r%2520fas%2520fa-exclamation-triangle%2522%253E%253C%252Fi%253E%253C%252Fspan%253E%250A%2509Warning%21%2520There%2520was%2520problem%2520in%2520your%2520connection.%253Ca%2520class%253D%2522alert-link%2520alert-link-warning%2522%2520href%253D%2522%2523%2522%253EClick%2520here%2520for%2520%2520%2509more%2520information%253C%252Fa%253E%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522alert-container%2520alert-warning-outline%2520alert-warning-close%2522%253E%250A%2509%253Cspan%253E%253Ci%2520class%253D%2522margin-r%2520fas%2520fa-exclamation-triangle%2522%253E%253C%252Fi%253E%253C%252Fspan%253E%250A%2509Warning%21%2520There%2520was%2520problem%2520in%2520your%2520connection.%253Ca%2520class%253D%2522alert-link%2520alert-link-warning%2522%2520href%253D%2522%2523%2522%253EClick%2520here%2520for%2520%2520%2509more%2520information%253C%252Fa%253E%250A%2520%2509%253Cbutton%2520class%253D%2522alert-close%2520alert-warning-close-btn%2522%2520onclick%253D%2522this.parentElement.style.display%253D%27none%27%2522%253E%2526times%253B%2509%2520%253C%252Fbutton%253E%250A%253C%252Fdiv%253E"
+                                style=" border:0; transform: scale(1); overflow:hidden;"
+                                sandbox="allow-scripts allow-same-origin">
+                            </iframe>
+                        </code>
+                    </section>
+                </div>
+            </div>
+            <hr>
+            <div class="component-container" id="avatar">
+                <h1 class="text-underline">Avatars</h1>
+                <p class="text-3xl">Avatar is an icon which shows the users profile picture, This is displayed specific to the account. Normally for any accounts created if there is no any picture provided then automatically Text based icon will be displayed and if picture provided then that will be displayed</p>
+                <div class="component-item-container">
+                    <h3>Round Image Avatars</h3>
+                    <p class="text-2xl">These are different sized round shaped image avatars, different sizes of avatars large(lg), medium(md), small(sm) and extra-small(xs) sizes</p>
+                    <section class="sample-container flex">
+                        <div class="avatar avatar-lg">
+                            <img class="img-responsive img-round" src="../components/assets/images/avatar.png" alt="Avatar">
+                        </div>
+                        <div class="avatar avatar-md">
+                            <img class="img-responsive img-round" src="../components/assets/images/avatar.png" alt="Avatar">
+                        </div>
+                        <div class="avatar avatar-sm">
+                            <img class="img-responsive img-round" src="../components/assets/images/avatar.png" alt="Avatar">
+                        </div>
+                        <div class="avatar avatar-xs">
+                            <img class="img-responsive img-round" src="../components/assets/images/avatar.png" alt="Avatar">
+                        </div>
+                    </section>
+                    <section class="code-section">
+                        <code>
+                            <iframe
+                                src="https://carbon.now.sh/embed?bg=rgba%28249%2C237%2C212%2C1%29&t=base16-dark&wt=sharp&l=auto&width=990&ds=true&dsyoff=0px&dsblur=0px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=IBM+Plex+Mono&fs=14px&lh=143%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522avatar%2520avatar-lg%2522%253E%250A%2509%253Cimg%2520class%253D%2522img-responsive%2520img-round%2522%2520src%253D%2522..%252Fcomponents%252Fassets%252Fimages%252Favatar.png%2522%2520alt%253D%2522Avatar%2522%253E%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522avatar%2520avatar-md%2522%253E%250A%2509%253Cimg%2520class%253D%2522img-responsive%2520img-round%2522%2520src%253D%2522..%252Fcomponents%252Fassets%252Fimages%252Favatar.png%2522%2520alt%253D%2522Avatar%2522%253E%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522avatar%2520avatar-sm%2522%253E%250A%2509%253Cimg%2520class%253D%2522img-responsive%2520img-round%2522%2520src%253D%2522..%252Fcomponents%252Fassets%252Fimages%252Favatar.png%2522%2520alt%253D%2522Avatar%2522%253E%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522avatar%2520avatar-xs%2522%253E%250A%2509%253Cimg%2520class%253D%2522img-responsive%2520img-round%2522%2520src%253D%2522..%252Fcomponents%252Fassets%252Fimages%252Favatar.png%2522%2520alt%253D%2522Avatar%2522%253E%250A%253C%252Fdiv%253E"
+                                style=" border:0; transform: scale(1); overflow:hidden;"
+                                sandbox="allow-scripts allow-same-origin">
+                            </iframe>
+                        </code>
+                    </section>
+                </div>
+                <div class="component-item-container">
+                    <h3>Round Text Avatars</h3>
+                    <p class="text-2xl">These are different sized round shaped text avatars, different sizes of avatars large(lg), medium(md), small(sm) and extra-small(xs) sizes</p>
+                    <section class="sample-container flex">
+                        <div class="avatar avatar-text-lg avatar-text img-round" role="img" alt="Avatar">AB</div>
+                        <div class="avatar avatar-text-md avatar-text img-round" role="img" alt="Avatar">AB</div>
+                        <div class="avatar avatar-text-sm avatar-text img-round" role="img" alt="Avatar">AB</div>
+                        <div class="avatar avatar-text-xs avatar-text img-round" role="img" alt="Avatar">AB</div>
+                    </section>
+                    <section class="code-section">
+                        <code>
+                            <iframe
+                                src="https://carbon.now.sh/embed?bg=rgba%28239%2C40%2C44%2C1%29&t=base16-dark&wt=sharp&l=auto&width=990&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=143%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522avatar%2520avatar-text-lg%2520avatar-text%2520img-round%2522%2520role%253D%2522img%2522%2520alt%253D%2522Avatar%2522%253EAB%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522avatar%2520avatar-text-md%2520avatar-text%2520img-round%2522%2520role%253D%2522img%2522%2520alt%253D%2522Avatar%2522%253EAB%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522avatar%2520avatar-text-sm%2520avatar-text%2520img-round%2522%2520role%253D%2522img%2522%2520alt%253D%2522Avatar%2522%253EAB%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522avatar%2520avatar-text-xs%2520avatar-text%2520img-round%2522%2520role%253D%2522img%2522%2520alt%253D%2522Avatar%2522%253EAB%253C%252Fdiv%253E%250A"
+                                style=" border:0; transform: scale(1); overflow:hidden;"
+                                sandbox="allow-scripts allow-same-origin">
+                            </iframe>
+                        </code>
+                    </section>
+                </div>
+                <div class="component-item-container">
+                    <h3>Square Image Avatars</h3>
+                    <p class="text-2xl">These are different sized square shaped image avatars, different sizes of avatars large(lg), medium(md), small(sm) and extra-small(xs) sizes</p>
+                    <section class="sample-container flex">
+                        <div class="avatar avatar-lg">
+                            <img class="img-responsive img-square" src="../components/assets/images/avatar.png" alt="Avatar">
+                        </div>
+                        <div class="avatar avatar-md">
+                            <img class="img-responsive img-square" src="../components/assets/images/avatar.png" alt="Avatar">
+                        </div>
+                        <div class="avatar avatar-sm">
+                            <img class="img-responsive img-square" src="../components/assets/images/avatar.png" alt="Avatar">
+                        </div>
+                        <div class="avatar avatar-xs">
+                            <img class="img-responsive img-square" src="../components/assets/images/avatar.png" alt="Avatar">
+                        </div>
+                    </section>
+                    <section class="code-section">
+                        <code>
+                            <iframe
+                                src="https://carbon.now.sh/embed?bg=rgba%28249%2C237%2C212%2C1%29&t=base16-dark&wt=sharp&l=auto&width=990&ds=true&dsyoff=0px&dsblur=0px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=IBM+Plex+Mono&fs=14px&lh=143%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522avatar%2520avatar-lg%2522%253E%250A%2509%253Cimg%2520class%253D%2522img-responsive%2520img-square%2522%2520src%253D%2522..%252Fcomponents%252Fassets%252Fimages%252Favatar.png%2522%2520alt%253D%2522Avatar%2522%253E%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522avatar%2520avatar-md%2522%253E%250A%2509%253Cimg%2520class%253D%2522img-responsive%2520img-square%2522%2520src%253D%2522..%252Fcomponents%252Fassets%252Fimages%252Favatar.png%2522%2520alt%253D%2522Avatar%2522%253E%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522avatar%2520avatar-sm%2522%253E%250A%2509%253Cimg%2520class%253D%2522img-responsive%2520img-square%2522%2520src%253D%2522..%252Fcomponents%252Fassets%252Fimages%252Favatar.png%2522%2520alt%253D%2522Avatar%2522%253E%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522avatar%2520avatar-xs%2522%253E%250A%2509%253Cimg%2520class%253D%2522img-responsive%2520img-square%2522%2520src%253D%2522..%252Fcomponents%252Fassets%252Fimages%252Favatar.png%2522%2520alt%253D%2522Avatar%2522%253E%250A%253C%252Fdiv%253E"
+                                style=" border:0; transform: scale(1); overflow:hidden;"
+                                sandbox="allow-scripts allow-same-origin">
+                            </iframe>
+                        </code>
+                    </section>
+                </div>
+                <div class="component-item-container">
+                    <h3>Square Text Avatars</h3>
+                    <p class="text-2xl">These are different sized square shaped text avatars, different sizes of avatars large(lg), medium(md), small(sm) and extra-small(xs) sizes</p>
+                    <section class="sample-container flex">
+                        <div class="avatar avatar-text-lg avatar-text img-square" role="img" alt="Avatar">AB</div>
+                        <div class="avatar avatar-text-md avatar-text img-square" role="img" alt="Avatar">AB</div>
+                        <div class="avatar avatar-text-sm avatar-text img-square" role="img" alt="Avatar">AB</div>
+                        <div class="avatar avatar-text-xs avatar-text img-square" role="img" alt="Avatar">AB</div>
+                    </section>
+                    <section class="code-section">
+                        <code>
+                            <iframe
+                                src="https://carbon.now.sh/embed?bg=rgba%28239%2C40%2C44%2C1%29&t=base16-dark&wt=sharp&l=auto&width=990&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=143%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522avatar%2520avatar-text-lg%2520avatar-text%2520img-square%2522%2520role%253D%2522img%2522%2520alt%253D%2522Avatar%2522%253EAB%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522avatar%2520avatar-text-md%2520avatar-text%2520img-square%2522%2520role%253D%2522img%2522%2520alt%253D%2522Avatar%2522%253EAB%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522avatar%2520avatar-text-sm%2520avatar-text%2520img-square%2522%2520role%253D%2522img%2522%2520alt%253D%2522Avatar%2522%253EAB%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522avatar%2520avatar-text-xs%2520avatar-text%2520img-square%2522%2520role%253D%2522img%2522%2520alt%253D%2522Avatar%2522%253EAB%253C%252Fdiv%253E%250A%250A"
+                                style=" border:0; transform: scale(1); overflow:hidden;"
+                                sandbox="allow-scripts allow-same-origin">
+                            </iframe>
+                        </code>
+                    </section>
+                </div>
+            </div>
+            <hr>
+            <div class="component-container" id="badge">
+                <h1 class="text-underline">Badges</h1>
+                <p class="text-3xl">Badge is a component used to give information about the state. There are different types of badges in online store badges used to give information about new arrivals, In social media applications it is used to provide information about status of user and it is also used to provide information of number of items or messages</p>
+                <div class="component-item-container">
+                    <h3>Badge on Avatars</h3>
+                    <p class="text-2xl">These are the different types of badges on different sized avatars, They  are categorized as available(green), busy(red) and not avilable(orange)</p>
+                    <section class="sample-container flex">
+                        <div class="avatar avatar-lg">
+                            <img class="img-responsive img-round" src="../components/assets/images/avatar.png" alt="Avatar">
+                            <span class="status-badge-avatar badge-status-busy"></span>
+                        </div>
+                        <div class="avatar avatar-md">
+                            <img class="img-responsive img-round" src="../components/assets/images/avatar.png" alt="Avatar">
+                            <span class="status-badge-avatar badge-status-available"></span>
+                        </div>
+                        <div class="avatar avatar-sm">
+                            <img class="img-responsive img-round" src="../components/assets/images/avatar.png" alt="Avatar">
+                            <span class="status-badge-avatar badge-status-away"></span>
+                        </div>
+                        <div class="avatar avatar-xs">
+                            <img class="img-responsive img-round" src="../components/assets/images/avatar.png" alt="Avatar">
+                            <span class="status-badge-avatar badge-status-busy"></span>
+                        </div>
+                    </section>
+                    <section class="code-section">
+                        <code>
+                            <iframe
+                                src="https://carbon.now.sh/embed?bg=rgba%28249%2C237%2C212%2C1%29&t=base16-dark&wt=sharp&l=auto&width=990&ds=true&dsyoff=0px&dsblur=0px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=IBM+Plex+Mono&fs=14px&lh=143%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522avatar%2520avatar-lg%2522%253E%250A%2509%253Cimg%2520class%253D%2522img-responsive%2520img-round%2522%2520src%253D%2522..%252Fcomponents%252Fassets%252Fimages%252Favatar.png%2522%2520alt%253D%2522Avatar%2522%253E%250A%2509%253Cspan%2520class%253D%2522status-badge-avatar%2520badge-status-busy%2522%253E%253C%252Fspan%253E%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522avatar%2520avatar-md%2522%253E%250A%2509%253Cimg%2520class%253D%2522img-responsive%2520img-round%2522%2520src%253D%2522..%252Fcomponents%252Fassets%252Fimages%252Favatar.png%2522%2520alt%253D%2522Avatar%2522%253E%250A%2509%253Cspan%2520class%253D%2522status-badge-avatar%2520badge-status-available%2522%253E%253C%252Fspan%253E%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522avatar%2520avatar-sm%2522%253E%250A%2509%253Cimg%2520class%253D%2522img-responsive%2520img-round%2522%2520src%253D%2522..%252Fcomponents%252Fassets%252Fimages%252Favatar.png%2522%2520alt%253D%2522Avatar%2522%253E%250A%2509%253Cspan%2520class%253D%2522status-badge-avatar%2520badge-status-away%2522%253E%253C%252Fspan%253E%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522avatar%2520avatar-xs%2522%253E%250A%2509%253Cimg%2520class%253D%2522img-responsive%2520img-round%2522%2520src%253D%2522..%252Fcomponents%252Fassets%252Fimages%252Favatar.png%2522%2520alt%253D%2522Avatar%2522%253E%250A%2509%253Cspan%2520class%253D%2522status-badge-avatar%2520badge-status-busy%2522%253E%253C%252Fspan%253E%250A%253C%252Fdiv%253E%253Cdiv%2520class%253D%2522avatar%2520avatar-lg%2522%253E%250A%2509%253Cimg%2520class%253D%2522img-responsive%2520img-round%2522%2520src%253D%2522..%252Fcomponents%252Fassets%252Fimages%252Favatar.png%2522%2520alt%253D%2522Avatar%2522%253E%250A%2509%253Cspan%2520class%253D%2522status-badge-avatar%2520badge-status-busy%2522%253E%253C%252Fspan%253E%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522avatar%2520avatar-md%2522%253E%250A%2509%253Cimg%2520class%253D%2522img-responsive%2520img-round%2522%2520src%253D%2522..%252Fcomponents%252Fassets%252Fimages%252Favatar.png%2522%2520alt%253D%2522Avatar%2522%253E%250A%2509%253Cspan%2520class%253D%2522status-badge-avatar%2520badge-status-available%2522%253E%253C%252Fspan%253E%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522avatar%2520avatar-sm%2522%253E%250A%2509%253Cimg%2520class%253D%2522img-responsive%2520img-round%2522%2520src%253D%2522..%252Fcomponents%252Fassets%252Fimages%252Favatar.png%2522%2520alt%253D%2522Avatar%2522%253E%250A%2509%253Cspan%2520class%253D%2522status-badge-avatar%2520badge-status-away%2522%253E%253C%252Fspan%253E%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522avatar%2520avatar-xs%2522%253E%250A%2509%253Cimg%2520class%253D%2522img-responsive%2520img-round%2522%2520src%253D%2522..%252Fcomponents%252Fassets%252Fimages%252Favatar.png%2522%2520alt%253D%2522Avatar%2522%253E%250A%2509%253Cspan%2520class%253D%2522status-badge-avatar%2520badge-status-busy%2522%253E%253C%252Fspan%253E%250A%253C%252Fdiv%253E"
+                                style=" border:0; transform: scale(1); overflow:hidden;"
+                                sandbox="allow-scripts allow-same-origin">
+                            </iframe>
+                        </code>
+                    </section>
+                </div>
+                <div class="component-item-container">
+                    <h3>Badge on Icons</h3>
+                    <p class="text-2xl">These are badges for icons, which is used to give information about the count of messages or state of icon</p>
+                    <section class="sample-container flex">
+                        <button class="badge-container badge-btn margin">
+                            <i class="fas fa-envelope"></i>
+                            <span class="status-badge-icon background-primary">30+</span>
+                        </button>
+                        <button class="badge-container badge-btn margin">
+                            <i class="fas fa-cart-shopping"></i>
+                            <span class="status-badge-icon background-primary">30</span>
+                        </button>
+                        <button class="badge-container badge-btn margin">
+                            <i class="fas fa-home"></i>
+                            <span class="status-badge-icon background-primary">3</span>
+                        </button>
+                        <button class="badge-container badge-btn margin">
+                            <i class="fab fa-whatsapp"></i>
+                            <span class="status-badge-icon background-primary">30+</span>
+                        </button>
+                    </section>
+                    <section class="code-section">
+                        <code>
+                            <iframe
+                                src="https://carbon.now.sh/embed?bg=rgba%28239%2C40%2C44%2C1%29&t=base16-dark&wt=sharp&l=auto&width=990&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=143%25&si=false&es=2x&wm=false&code=%253Cbutton%2520class%253D%2522badge-container%2520badge-btn%2522%253E%250A%2509%253Ci%2520class%253D%2522fas%2520fa-envelope%2522%253E%253C%252Fi%253E%250A%2509%253Cspan%2520class%253D%2522status-badge-icon%2520background-primary%2522%253E30%252B%253C%252Fspan%253E%250A%253C%252Fbutton%253E%250A%253Cbutton%2520class%253D%2522badge-container%2520badge-btn%2522%253E%250A%2509%253Ci%2520class%253D%2522fas%2520fa-cart-shopping%2522%253E%253C%252Fi%253E%250A%2509%253Cspan%2520class%253D%2522status-badge-icon%2520background-primary%2522%253E30%253C%252Fspan%253E%250A%253C%252Fbutton%253E%250A%253Cbutton%2520class%253D%2522badge-container%2520badge-btn%2522%253E%250A%2509%253Ci%2520class%253D%2522fas%2520fa-home%2522%253E%253C%252Fi%253E%250A%2509%253Cspan%2520class%253D%2522status-badge-icon%2520background-primary%2522%253E3%253C%252Fspan%253E%250A%253C%252Fbutton%253E%250A%253Cbutton%2520class%253D%2522badge-container%2520badge-btn%2522%253E%250A%2509%253Ci%2520class%253D%2522fab%2520fa-whatsapp%2522%253E%253C%252Fi%253E%250A%2509%253Cspan%2520class%253D%2522status-badge-icon%2520background-primary%2522%253E30%252B%253C%252Fspan%253E%250A%253C%252Fbutton%253E"
+                                style=" border:0; transform: scale(1); overflow:hidden;"
+                                sandbox="allow-scripts allow-same-origin">
+                            </iframe>
+                        </code>
+                    </section>
+                </div>
+                <div class="component-item-container">
+                    <h3>Text badges</h3>
+                    <p class="text-2xl">These are text badges which are resized based on the type of text</p>
+                    <section class="sample-container">
+                        <h1>Demo for Heading with Badge <span class="text-badge background-primary border-curve-badge">New</span></h1>
+                        <h2>Demo for Heading with Badge <span class="text-badge background-primary round-pill-badge">New</span></h2>
+                        <h3>Demo for Heading with Badge <span class="text-badge background-primary border-curve-badge">New</span></h3>
+                        <h4>Demo for Heading with Badge <span class="text-badge background-primary border-curve-badge">New</span></h4>
+                        <h5>Demo for Heading with Badge <span class="text-badge background-primary round-pill-badge">New</span></h5>
+                        <h6>Demo for Heading with Badge <span class="text-badge background-primary border-curve-badge">New</span></h6>
+                        <p>Demo for Paragraph with Badge <span class="text-badge background-primary border-curve-badge">New</span></p>
+                    </section>
+                    <section class="code-section">
+                        <code>
+                            <iframe
+                                src="https://carbon.now.sh/embed?bg=rgba%28249%2C237%2C212%2C1%29&t=base16-dark&wt=sharp&l=auto&width=990&ds=true&dsyoff=0px&dsblur=0px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=IBM+Plex+Mono&fs=14px&lh=143%25&si=false&es=2x&wm=false&code=%253Ch1%253EDemo%2520for%2520Heading%2520with%2520Badge%2520%253Cspan%2520class%253D%2522text-badge%2520background-primary%2520border-curve-badge%2522%253ENew%253C%252Fspan%253E%253C%252Fh1%253E%250A%253Ch2%253EDemo%2520for%2520Heading%2520with%2520Badge%2520%253Cspan%2520class%253D%2522text-badge%2520background-primary%2520round-pill-badge%2522%253ENew%253C%252Fspan%253E%253C%252Fh2%253E%250A%253Ch3%253EDemo%2520for%2520Heading%2520with%2520Badge%2520%253Cspan%2520class%253D%2522text-badge%2520background-primary%2520border-curve-badge%2522%253ENew%253C%252Fspan%253E%253C%252Fh3%253E%250A%253Ch4%253EDemo%2520for%2520Heading%2520with%2520Badge%2520%253Cspan%2520class%253D%2522text-badge%2520background-primary%2520border-curve-badge%2522%253ENew%253C%252Fspan%253E%253C%252Fh4%253E%250A%253Ch5%253EDemo%2520for%2520Heading%2520with%2520Badge%2520%253Cspan%2520class%253D%2522text-badge%2520background-primary%2520round-pill-badge%2522%253ENew%253C%252Fspan%253E%253C%252Fh5%253E%250A%253Ch6%253EDemo%2520for%2520Heading%2520with%2520Badge%2520%253Cspan%2520class%253D%2522text-badge%2520background-primary%2520border-curve-badge%2522%253ENew%253C%252Fspan%253E%253C%252Fh6%253E%250A%253Cp%253EDemo%2520for%2520Paragraph%2520with%2520Badge%2520%253Cspan%2520class%253D%2522text-badge%2520background-primary%2520border-curve-badge%2522%253ENew%253C%252Fspan%253E%253C%252Fp%253E"
+                                style=" border:0; transform: scale(1); overflow:hidden;"
+                                sandbox="allow-scripts allow-same-origin">
+                            </iframe>
+                        </code>
+                    </section>
+                </div>
+                <div class="component-item-container">
+                    <h3>Ribbon badges</h3>
+                    <p class="text-2xl">These are ribbon badges normally used on ecommerce products</p>
+                    <section class="sample-container flex">
+                        <div class="card">
+                            <div class="badge badge-offer">
+                                <span></span>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="badge badge-new">
+                                <span></span>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="code-section">
+                        <code>
+                            <iframe
+                                src="https://carbon.now.sh/embed?bg=rgba%28249%2C237%2C212%2C1%29&t=base16-dark&wt=sharp&l=auto&width=990&ds=true&dsyoff=0px&dsblur=0px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=IBM+Plex+Mono&fs=14px&lh=143%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522card%2522%253E%250A%2509%253Cdiv%2520class%253D%2522badge%2520badge-offer%2522%253E%250A%2509%2509%253Cspan%253E%253C%252Fspan%253E%250A%2509%253C%252Fdiv%253E%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522card%2522%253E%250A%2509%253Cdiv%2520class%253D%2522badge%2520badge-new%2522%253E%250A%2509%2509%253Cspan%253E%253C%252Fspan%253E%250A%2509%253C%252Fdiv%253E%250A%253C%252Fdiv%253E"
+                                style=" border:0; transform: scale(1); overflow:hidden;"
+                                sandbox="allow-scripts allow-same-origin">
+                            </iframe>
+                        </code>
+                    </section>
+                </div>
+            </div>
+            <div class="component-container" id="button">
+                <h1 class="text-underline">Buttons</h1>
+                <p class="text-3xl">Button is a basic component for website, there are different types buttons existing. few of the types are Primary button with background color, Button with outline, Button with only icon, Button with text and icon, Diabled button, Button with link to specific part or different website, Toggle button and Floating Action button</p>
+                <div class="component-item-container">
+                    <h3>Solid buttons</h3>
+                    <p class="text-2xl">These are the buttons having solid background color</p>
+                    <section class="sample-container flex">
+                        <button class="btn btn-solid-primary" >Primary</button>
+                        <button class="btn btn-solid-secondary" >Secondary</button>
+                        <button class="btn btn-solid-disabled">Disabled</button>
+                    </section>
+                    <section class="code-section">
+                        <code>
+                            <iframe
+                                src="https://carbon.now.sh/embed?bg=rgba%28239%2C40%2C44%2C1%29&t=base16-dark&wt=sharp&l=auto&width=990&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=143%25&si=false&es=2x&wm=false&code=%253Cbutton%2520class%253D%2522btn%2520btn-solid-primary%2522%2520%253EPrimary%253C%252Fbutton%253E%250A%253Cbutton%2520class%253D%2522btn%2520btn-solid-secondary%2522%2520%253ESecondary%253C%252Fbutton%253E%250A%253Cbutton%2520class%253D%2522btn%2520btn-solid-disabled%2522%253EDisabled%253C%252Fbutton%253E%250A%250A"
+                                style=" border:0; transform: scale(1); overflow:hidden;"
+                                sandbox="allow-scripts allow-same-origin">
+                            </iframe>
+                        </code>
+                    </section>
+                </div>
+                <div class="component-item-container">
+                    <h3>Outlined buttons</h3>
+                    <p class="text-2xl">These are the buttons having outline with specific color</p>
+                    <section class="sample-container flex">
+                        <button class="btn btn-outline-primary">Primary</button>
+                        <button class="btn btn-outline-secondary">Secondary</button>
+                        <button class="btn btn-outline-disabled">Disabled</button>
+                    </section>
+                    <section class="code-section">
+                        <code>
+                            <iframe
+                                src="https://carbon.now.sh/embed?bg=rgba%28239%2C40%2C44%2C1%29&t=base16-dark&wt=sharp&l=auto&width=990&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=143%25&si=false&es=2x&wm=false&code=%253Cbutton%2520class%253D%2522btn%2520btn-outline-primary%2522%253EPrimary%253C%252Fbutton%253E%250A%253Cbutton%2520class%253D%2522btn%2520btn-outline-secondary%2522%253ESecondary%253C%252Fbutton%253E%250A%253Cbutton%2520class%253D%2522btn%2520btn-outline-disabled%2522%253EDisabled%253C%252Fbutton%253E%250A%250A"
+                                style=" border:0; transform: scale(1); overflow:hidden;"
+                                sandbox="allow-scripts allow-same-origin">
+                            </iframe>
+                        </code>
+                    </section>
+                </div>
+                <div class="component-item-container">
+                    <h3>Icon buttons</h3>
+                    <p class="text-2xl">These are the buttons having just the icon, on clicking that specified action will happen</p>
+                    <section class="sample-container flex">
+                        <button class="btn btn-icon-primary"><i class="fas fa-cart-shopping btn-icon"></i></button>
+                        <button class="btn btn-icon-primary"><i class="fas fa-trash btn-icon"></i></button>
+                        <button class="btn btn-icon-primary"><i class="fas fa-paper-plane btn-icon"></i></button>
+                    </section>
+                    <section class="code-section">
+                        <code>
+                            <iframe
+                                src="https://carbon.now.sh/embed?bg=rgba%28239%2C40%2C44%2C1%29&t=base16-dark&wt=sharp&l=auto&width=990&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=143%25&si=false&es=2x&wm=false&code=%253Cbutton%2520class%253D%2522btn%2520btn-icon-primary%2522%253E%253Ci%2520class%253D%2522fas%2520fa-cart-shopping%2520btn-icon%2522%253E%253C%252Fi%253E%253C%252Fbutton%253E%250A%253Cbutton%2520class%253D%2522btn%2520btn-icon-primary%2522%253E%253Ci%2520class%253D%2522fas%2520fa-trash%2520btn-icon%2522%253E%253C%252Fi%253E%253C%252Fbutton%253E%250A%253Cbutton%2520class%253D%2522btn%2520btn-icon-primary%2522%253E%253Ci%2520class%253D%2522fas%2520fa-paper-plane%2520btn-icon%2522%253E%253C%252Fi%253E%253C%252Fbutton%253E%250A%250A"
+                                style=" border:0; transform: scale(1); overflow:hidden;"
+                                sandbox="allow-scripts allow-same-origin">
+                            </iframe>
+                        </code>
+                    </section>
+                </div>
+                <div class="component-item-container">
+                    <h3>Button with icon and label</h3>
+                    <p class="text-2xl">These are the buttons having icon along with label, on clicking that specified action will happen</p>
+                    <section class="sample-container flex">
+                        <button class="btn btn-icon-text-primary"><i class="fa fa-cart-shopping btn-icon margin-r"></i>Add to Cart</button>
+                        <button class="btn btn-icon-text-primary-outline"><i class="fa fa-cart-shopping btn-icon margin-r"></i>Add to Cart</button>
+                        <button class="btn btn-icon-text-primary-disabled" disabled="disabled"><i class="fas fa-save btn-icon margin-r"></i>Save</button>
+                    </section>
+                    <section class="code-section">
+                        <code>
+                            <iframe
+                                src="https://carbon.now.sh/embed?bg=rgba%28239%2C40%2C44%2C1%29&t=base16-dark&wt=sharp&l=auto&width=990&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=143%25&si=false&es=2x&wm=false&code=%253Cbutton%2520class%253D%2522btn%2520btn-icon-text-primary%2522%253E%253Ci%2520class%253D%2522fa%2520fa-cart-shopping%2520btn-icon%2520margin-r%2522%253E%253C%252Fi%253EAdd%2520toCart%253C%252Fbutton%253E%250A%253Cbutton%2520class%253D%2522btn%2520btn-icon-text-primary-outline%2522%253E%253Ci%2520class%253D%2522fa%2520fa-cart-shopping%2520btn-icon%2520margin-r%2522%253E%253C%252Fi%253EAdd%2520to%2520Cart%253C%252Fbutton%253E%250A%253Cbutton%2520class%253D%2522btn%2520btn-icon-text-primary-disabled%2522%2520disabled%253D%2522disabled%2522%253E%253Ci%2520class%253D%2522fas%2520fa-save%2520btn-icon%2520margin-r%2522%253E%253C%252Fi%253ESave%253C%252Fbutton%253E"
+                                style="  border:0; transform: scale(1); overflow:hidden;"
+                                sandbox="allow-scripts allow-same-origin">
+                            </iframe>
+                        </code>
+                    </section>
+                </div>
+                <div class="component-item-container">
+                    <h3>Link button</h3>
+                    <p class="text-2xl">This is the button having link to specific section of website or to different website</p>
+                    <section class="sample-container flex">
+                        <button class="btn btn-outline-primary "><a href="#"class="link-btn">Link</a></button>
+                    </section>
+                    <section class="code-section">
+                        <code>
+                            <iframe
+                                src="https://carbon.now.sh/embed?bg=rgba%28239%2C40%2C44%2C1%29&t=base16-dark&wt=sharp&l=auto&width=990&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=143%25&si=false&es=2x&wm=false&code=%250A%253Cbutton%2520class%253D%2522btn%2520btn-outline-primary%2520%2522%253E%253Ca%2520href%253D%2522%2523%2522class%253D%2522link-btn%2522%253ELink%253C%252Fa%253E%253C%252Fbutton%253E%250A%250A%250A"
+                                style="  border:0; transform: scale(1); overflow:hidden;"
+                                sandbox="allow-scripts allow-same-origin">
+                            </iframe>
+                        </code>
+                    </section>
+                </div>
+                <div class="component-item-container">
+                    <h3>Toggle button</h3>
+                    <p class="text-2xl">Toggle button is the one used to switch between any two states</p>
+                    <section class="sample-container flex">
+                        <button class="toggle-btn">
+                            <label class="switch">
+                                <input type="checkbox">
+                                <span class="slider"></span>
+                            </label>
+                        </button>
+                    </section>
+                    <section class="code-section">
+                        <code>
+                            <iframe
+                                src="https://carbon.now.sh/embed?bg=rgba%28239%2C40%2C44%2C1%29&t=base16-dark&wt=sharp&l=auto&width=990&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=143%25&si=false&es=2x&wm=false&code=%253Cbutton%2520class%253D%2522toggle-btn%2522%253E%250A%2509%253Clabel%2520class%253D%2522switch%2522%253E%250A%2509%2509%253Cinput%2520type%253D%2522checkbox%2522%253E%250A%2509%2509%253Cspan%2520class%253D%2522slider%2522%253E%253C%252Fspan%253E%250A%2509%253C%252Flabel%253E%250A%253C%252Fbutton%253E"
+                                style="border:0; transform: scale(1); overflow:hidden;"
+                                sandbox="allow-scripts allow-same-origin">
+                            </iframe>
+                        </code>
+                    </section>
+                </div>
+                <div class="component-item-container">
+                    <h3>Floating Action button</h3>
+                    <p class="text-2xl">Floating action button is used to perform most common action on the screen</p>
+                    <section class="sample-container flex">
+                        <button class="btn btn-float-action"><a class="link-style-none white-symbol" href="#"><i class="fas fa-angle-up"></i></a></button>
+                    </section>
+                    <section class="code-section">
+                        <code>
+                            <iframe
+                                src="https://carbon.now.sh/embed?bg=rgba%28239%2C40%2C44%2C1%29&t=base16-dark&wt=sharp&l=auto&width=990&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=143%25&si=false&es=2x&wm=false&code=%250A%250A%253Cbutton%2520class%253D%2522btn%2520btn-float-action%2522%253E%253Ca%2520class%253D%2522link-style-none%2520white-symbol%2522%2520href%253D%2522%2523%2522%253E%253Ci%2520class%253D%2522fas%2520fa-angle-up%2522%253E%253C%252Fi%253E%253C%252Fa%253E%253C%252Fbutton%253E%250A%250A"
+                                style=" border:0; transform: scale(1); overflow:hidden;"
+                                sandbox="allow-scripts allow-same-origin">
+                            </iframe>
+                        </code>
+                    </section>
+                </div>
+            </div>
+            <hr>
+            <div class="component-container" id="card">
+                <h1 class="text-underline">Cards</h1>
+                <p class="text-3xl">Card is one of the important component for ecommerce websites and social media, There are diffent types of cards based on styles. Few of them are vertical cards, horizontal cards, Cards with badge, Cards with dismiss button, Text cards  and cards with text overlay</p>
+                <div class="component-item-container">
+                    <h3>Simple card</h3>
+                    <p class="text-2xl">Simple card is the basic version of the card containing required details about the product, this one is designed in vertical style</p>
+                    <section class="sample-container flex">
+                        <div class="card-container vertical">
+                            <div class="card-img vertical-img border-bottom">
+                                <img src="../components/assets/images/apple.png" alt="Apple">
+                            </div>
+                            <div class="card-details card-details-vertical">
+                                <h2 class="card-heading">Apple<span><i class="far fa-heart"></i></span></h2>
+                                <p class="card-sub-heading">Fresh apple from farm</p>
+                                <div class="rating text-lg">
+                                    <span class="rating-value">4.3<i class="fa fa-star checked margin-l"></i></span>
+                                    (<span class="rating-number">2333</span>)
+                                </div>
+                                <h4 class="product-price">Rs.120 <span class="original-price text-strike-through">Rs.150</span><span class="discount-percentage">20% off</span></h4>
+                                <button class="btn btn-icon-text-primary-outline"><span class="btn-icon"><i class="fa fa-shopping-basket margin-r"></i></span>Add to Basket</button>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="code-section">
+                        <code>
+                            <iframe
+                                src="https://carbon.now.sh/embed?bg=rgba%28239%2C40%2C44%2C1%29&t=base16-dark&wt=sharp&l=auto&width=990&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=143%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522card-container%2520vertical%2522%253E%250A%2509%253Cdiv%2520class%253D%2522card-img%2520vertical-img%2520border-bottom%2522%253E%250A%2509%2509%253Cimg%2520src%253D%2522..%252Fassets%252Fimages%252Fapple.png%2522%2520alt%253D%2522Apple%2522%253E%250A%2509%253C%252Fdiv%253E%250A%2509%253Cdiv%2520class%253D%2522card-details%2520card-details-vertical%2522%253E%250A%2509%2509%253Ch2%2520class%253D%2522card-heading%2522%253EApple%253Cspan%253E%253Ci%2520class%253D%2522far%2520fa-heart%2522%253E%253C%252Fi%253E%253C%252Fspan%253E%253C%252Fh2%253E%250A%2509%2509%253Cp%2520class%253D%2522card-sub-heading%2522%253EFresh%2520apple%2520from%2520farm%253C%252Fp%253E%250A%2509%2509%253Cdiv%2520class%253D%2522rating%2520text-lg%2522%253E%250A%2509%2509%2509%253Cspan%2520class%253D%2522rating-value%2522%253E4.3%253Ci%2520class%253D%2522fa%2520fa-star%2520checked%2520margin-l%2522%253E%253C%252Fi%253E%253C%252Fspan%253E%250A%2509%2509%2509%28%253Cspan%2520class%253D%2522rating-number%2522%253E2333%253C%252Fspan%253E%29%250A%2509%2509%253C%252Fdiv%253E%250A%2509%2509%253Ch4%2520class%253D%2522product-price%2522%253ERs.120%2520%253Cspan%2520class%253D%2522original-price%2520text-strike-through%2522%253ERs.150%253C%252Fspan%253E%253Cspan%2520%2509%2509%2509class%253D%2522discount-percentage%2522%253E20%2525%2520off%253C%252Fspan%253E%253C%252Fh4%253E%250A%2509%2509%253Cbutton%2520class%253D%2522btn%2520btn-icon-text-primary-outline%2522%253E%253Cspan%2520class%253D%2522btn-icon%2522%253E%253Ci%2520class%253D%2522fa%2520fa-shopping-basket%2520%2509%2509margin-r%2522%253E%253C%252Fi%253E%253C%252Fspan%253EAdd%2520to%2520Basket%253C%252Fbutton%253E%250A%2509%253C%252Fdiv%253E%250A%253C%252Fdiv%253E"
+                                style=" border:0; transform: scale(1); overflow:hidden;"
+                                sandbox="allow-scripts allow-same-origin">
+                            </iframe>
+                        </code>
+                    </section>
+                </div>
+                <div class="component-item-container">
+                    <h3>Card with badge</h3>
+                    <p class="text-2xl">This is the version of card which is having badge to attract user's attention towards product</p>
+                    <section class="sample-container flex">
+                        <div class="card-container vertical">
+                            <div class="card-img vertical-img border-bottom">
+                                <img src="../components/assets/images/apple.png" alt="Apple">
+                            </div>
+                            <div class="card-details card-details-vertical">
+                                <h2 class="card-heading">Apple<span><i class="far fa-heart"></i></span></h2>
+                                <p class="card-sub-heading">Fresh apple from farm</p>
+                                <div class="rating text-lg">
+                                    <span class="rating-value">4.3<i class="fa fa-star checked margin-l"></i></span>
+                                    (<span class="rating-number">2333</span>)
+                                </div>
+                                <h4 class="product-price">Rs.120 <span class="original-price text-strike-through">Rs.150</span><span class="discount-percentage">20% off</span></h4>
+                                <button class="btn btn-icon-text-primary-outline"><span class="btn-icon"><i class="fa fa-shopping-basket margin-r"></i></span>Add to Basket</button>
+                            </div>
+                            <div class="badge badge-offer">
+                                <span></span>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="code-section">
+                        <code>
+                            <iframe
+                                src="https://carbon.now.sh/embed?bg=rgba%28239%2C40%2C44%2C1%29&t=base16-dark&wt=sharp&l=auto&width=990&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=143%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522card-container%2520vertical%2522%253E%250A%2509%253Cdiv%2520class%253D%2522card-img%2520vertical-img%2520border-bottom%2522%253E%250A%2509%2509%253Cimg%2520src%253D%2522..%252Fassets%252Fimages%252Fapple.png%2522%2520alt%253D%2522Apple%2522%253E%250A%2509%253C%252Fdiv%253E%250A%2509%253Cdiv%2520class%253D%2522card-details%2520card-details-vertical%2522%253E%250A%2509%2509%253Ch2%2520class%253D%2522card-heading%2522%253EApple%253Cspan%253E%253Ci%2520class%253D%2522far%2520fa-heart%2522%253E%253C%252Fi%253E%253C%252Fspan%253E%253C%252Fh2%253E%250A%2509%2509%253Cp%2520class%253D%2522card-sub-heading%2522%253EFresh%2520apple%2520from%2520farm%253C%252Fp%253E%250A%2509%2509%253Cdiv%2520class%253D%2522rating%2520text-lg%2522%253E%250A%2509%2509%2509%253Cspan%2520class%253D%2522rating-value%2522%253E4.3%253Ci%2520class%253D%2522fa%2520fa-star%2520checked%2520margin-l%2522%253E%253C%252Fi%253E%253C%252Fspan%253E%250A%2509%2509%2509%28%253Cspan%2520class%253D%2522rating-number%2522%253E2333%253C%252Fspan%253E%29%250A%2509%2509%253C%252Fdiv%253E%250A%2509%2509%253Ch4%2520class%253D%2522product-price%2522%253ERs.120%2520%253Cspan%2520class%253D%2522original-price%2520text-strike-through%2522%253ERs.150%253C%252Fspan%253E%253Cspan%2520%2509%2509%2509class%253D%2522discount-percentage%2522%253E20%2525%2520off%253C%252Fspan%253E%253C%252Fh4%253E%250A%2509%2509%253Cbutton%2520class%253D%2522btn%2520btn-icon-text-primary-outline%2522%253E%253Cspan%2520class%253D%2522btn-icon%2522%253E%253Ci%2520class%253D%2522fa%2520fa-shopping-basket%2520%2509%2509%2520margin-r%2522%253E%253C%252Fi%253E%253C%252Fspan%253EAdd%2520to%2520Basket%253C%252Fbutton%253E%250A%2509%253C%252Fdiv%253E%250A%2509%253Cdiv%2520class%253D%2522badge%2520badge-offer%2522%253E%250A%2509%2509%253Cspan%253E%253C%252Fspan%253E%250A%2509%253C%252Fdiv%253E%250A%253C%252Fdiv%253E"
+                                style=" border:0; transform: scale(1); overflow:hidden;"
+                                sandbox="allow-scripts allow-same-origin">
+                            </iframe>
+                        </code>
+                    </section>
+                </div>
+                <div class="component-item-container">
+                    <h3>Dismissable Card</h3>
+                    <p class="text-2xl">This version of card is having dismiss action badge to close the card</p>
+                    <section class="sample-container flex">
+                        <div class="card-container vertical">
+                            <div class="card-img vertical-img border-bottom">
+                                <img src="../components/assets/images/apple.png" alt="Apple">
+                            </div>
+                            <div class="card-details card-details-vertical">
+                                <h2 class="card-heading">Apple<span><i class="far fa-heart"></i></span></h2>
+                                <p class="card-sub-heading">Fresh apple from farm</p>
+                                <div class="rating text-lg">
+                                    <span class="rating-value">4.3<i class="fa fa-star checked margin-l"></i></span>
+                                    (<span class="rating-number">2333</span>)
+                                </div>
+                                <h4 class="product-price">Rs.120 <span class="original-price text-strike-through">Rs.150</span><span class="discount-percentage">20% off</span></h4>
+                                <button class="btn btn-icon-text-primary-outline"><span class="btn-icon"><i class="fa fa-shopping-basket margin-r"></i></span>Add to Basket</button>
+                            </div>
+                            <span class="badge-close" onclick="this.parentElement.style.display='none'">&times;</span>
+                        </div>
+                    </section>
+                    <section class="code-section">
+                        <code>
+                            <iframe
+                                src="https://carbon.now.sh/embed?bg=rgba%28239%2C40%2C44%2C1%29&t=base16-dark&wt=sharp&l=auto&width=990&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=143%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522card-container%2520vertical%2522%253E%250A%2509%253Cdiv%2520class%253D%2522card-img%2520vertical-img%2520border-bottom%2522%253E%250A%2509%2509%253Cimg%2520src%253D%2522..%252Fassets%252Fimages%252Fapple.png%2522%2520alt%253D%2522Apple%2522%253E%250A%2509%253C%252Fdiv%253E%250A%2509%253Cdiv%2520class%253D%2522card-details%2520card-details-vertical%2522%253E%250A%2509%2509%253Ch2%2520class%253D%2522card-heading%2522%253EApple%253Cspan%253E%253Ci%2520class%253D%2522far%2520fa-heart%2522%253E%253C%252Fi%253E%253C%252Fspan%253E%253C%252Fh2%253E%250A%2509%2509%253Cp%2520class%253D%2522card-sub-heading%2522%253EFresh%2520apple%2520from%2520farm%253C%252Fp%253E%250A%2509%2509%253Cdiv%2520class%253D%2522rating%2520text-lg%2522%253E%250A%2509%2509%2509%253Cspan%2520class%253D%2522rating-value%2522%253E4.3%253Ci%2520class%253D%2522fa%2520fa-star%2520checked%2520margin-l%2522%253E%253C%252Fi%253E%253C%252Fspan%253E%250A%2509%2509%2509%28%253Cspan%2520class%253D%2522rating-number%2522%253E2333%253C%252Fspan%253E%29%250A%2509%2509%253C%252Fdiv%253E%250A%2509%2509%253Ch4%2520class%253D%2522product-price%2522%253ERs.120%2520%253Cspan%2520class%253D%2522original-price%2520text-strike-through%2522%253ERs.150%253C%252Fspan%253E%253Cspan%2520%2509%2509%2509class%253D%2522discount-percentage%2522%253E20%2525%2520off%253C%252Fspan%253E%253C%252Fh4%253E%250A%2509%2509%253Cbutton%2520class%253D%2522btn%2520btn-icon-text-primary-outline%2522%253E%253Cspan%2520class%253D%2522btn-icon%2522%253E%253Ci%2520class%253D%2522fa%2520fa-shopping-basket%2520%2509%2509%2520margin-r%2522%253E%253C%252Fi%253E%253C%252Fspan%253EAdd%2520to%2520Basket%253C%252Fbutton%253E%250A%2509%253C%252Fdiv%253E%250A%2509%253Cspan%2520class%253D%2522badge-close%2522%253E%2526times%253B%253C%252Fspan%253E%250A%253C%252Fdiv%253E"
+                                style="border:0; transform: scale(1); overflow:hidden;"
+                                sandbox="allow-scripts allow-same-origin">
+                            </iframe>
+                        </code>
+                    </section>
+                </div>
+                <div class="component-item-container">
+                    <h3>Card with text overlay</h3>
+                    <p class="text-2xl">This is the version of card having text on the image and also overlay text used to give information of unavailability</p>
+                    <section class="sample-container flex">
+                        <div class="card-container vertical overlay">
+                            <div class="card-img vertical-img border-bottom">
+                                <img src="../components/assets/images/apple.png" alt="Apple">
+                            </div>
+                            <div class="card-details card-details-vertical">
+                                <h2 class="card-heading">Apple<span><i class="far fa-heart"></i></span></h2>
+                                <p class="card-sub-heading">Fresh apple from farm</p>
+                                <div class="rating text-lg">
+                                    <span class="rating-value">4.3<i class="fa fa-star checked margin-l"></i></span>
+                                    (<span class="rating-number">2333</span>)
+                                </div>
+                                <h4 class="product-price">Rs.120 <span class="original-price text-strike-through">Rs.150</span><span class="discount-percentage">20% off</span></h4>
+                                <button class="btn btn-icon-text-primary-disabled"><span class="btn-icon"><i class="fa fa-shopping-basket margin-r"></i></span>Add to Basket</button>
+                            </div>
+                            <span class="card-text-overlay out-of-stock">
+                                <h2>Out of Stock</h2>
+                            </span>
+                        </div>
+                        <div class="card-container vertical">
+                            <div class="card-img vertical-img border-bottom">
+                                <img src="../components/assets/images/apple.png" alt="Apple">
+                            </div>
+                            <div class="card-details card-details-vertical">
+                                <div class="rating text-lg">
+                                    <span class="rating-value">4.3<i class="fa fa-star checked margin-l"></i></span>
+                                    (<span class="rating-number">2333</span>)
+                                </div>
+                                <h4 class="product-price">Rs.120 <span class="original-price text-strike-through">Rs.150</span><span class="discount-percentage">20% off</span></h4>
+                                <button class="btn btn-icon-text-primary-outline"><span class="btn-icon"><i class="fa fa-shopping-basket margin-r"></i></span>Add to Basket</button>
+                            </div>
+                            <div class="card-text-overlay">
+                                <h2 class="card-heading">Apple</h2>
+                                <p class="card-sub-heading">Fresh apple from farm</p>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="code-section">
+                        <code>
+                            <iframe
+                                src="https://carbon.now.sh/embed?bg=rgba%28239%2C40%2C44%2C1%29&t=base16-dark&wt=sharp&l=auto&width=990&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=143%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522card-container%2520vertical%2520overlay%2522%253E%250A%2509%253Cdiv%2520class%253D%2522card-img%2520vertical-img%2520border-bottom%2522%253E%250A%2509%2509%253Cimg%2520src%253D%2522..%252Fcomponents%252Fassets%252Fimages%252Fapple.png%2522%2520alt%253D%2522Apple%2522%253E%250A%2509%253C%252Fdiv%253E%250A%2509%253Cdiv%2520class%253D%2522card-details%2520card-details-vertical%2522%253E%250A%2509%2509%253Ch2%2520class%253D%2522card-heading%2522%253EApple%253Cspan%253E%253Ci%2520class%253D%2522far%2520fa-heart%2522%253E%253C%252Fi%253E%253C%252Fspan%253E%253C%252Fh2%253E%250A%2509%2509%253Cp%2520class%253D%2522card-sub-heading%2522%253EFresh%2520apple%2520from%2520farm%253C%252Fp%253E%250A%2509%2509%253Cdiv%2520class%253D%2522rating%2520text-lg%2522%253E%250A%2509%2509%2509%253Cspan%2520class%253D%2522rating-value%2522%253E4.3%253Ci%2520class%253D%2522fa%2520fa-star%2520checked%2520margin-l%2522%253E%253C%252Fi%253E%253C%252Fspan%253E%250A%2509%2509%2509%28%253Cspan%2520class%253D%2522rating-number%2522%253E2333%253C%252Fspan%253E%29%250A%2509%2509%253C%252Fdiv%253E%250A%2509%2509%253Ch4%2520class%253D%2522product-price%2522%253ERs.120%2520%253Cspan%2520class%253D%2522original-price%2520text-strike-through%2522%253ERs.150%253C%252Fspan%253E%253Cspan%2520%2509%2509%2509class%253D%2522discount-percentage%2522%253E20%2525%2520off%253C%252Fspan%253E%253C%252Fh4%253E%250A%2509%2509%253Cbutton%2520class%253D%2522btn%2520btn-icon-text-primary-disabled%2522%253E%253Cspan%2520class%253D%2522btn-icon%2522%253E%253Ci%2520class%253D%2522fa%2520fa-shopping-basket%2520%2509%2509%2520%2520margin-r%2522%253E%253C%252Fi%253E%253C%252Fspan%253EAdd%2520to%2520Basket%253C%252Fbutton%253E%250A%2509%253C%252Fdiv%253E%250A%2509%253Cspan%2520class%253D%2522card-text-overlay%2520out-of-stock%2522%253E%250A%2509%2509%253Ch2%253EOut%2520of%2520Stock%253C%252Fh2%253E%250A%2509%253C%252Fspan%253E%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522card-container%2520vertical%2522%253E%250A%2509%253Cdiv%2520class%253D%2522card-img%2520vertical-img%2520border-bottom%2522%253E%250A%2509%2509%253Cimg%2520src%253D%2522..%252Fcomponents%252Fassets%252Fimages%252Fapple.png%2522%2520alt%253D%2522Apple%2522%253E%250A%2509%253C%252Fdiv%253E%250A%2509%253Cdiv%2520class%253D%2522card-details%2520card-details-vertical%2522%253E%250A%2509%2509%253Cdiv%2520class%253D%2522rating%2520text-lg%2522%253E%250A%2509%2509%2509%253Cspan%2520class%253D%2522rating-value%2522%253E4.3%253Ci%2520class%253D%2522fa%2520fa-star%2520checked%2520margin-l%2522%253E%253C%252Fi%253E%253C%252Fspan%253E%250A%2509%2509%2509%28%253Cspan%2520class%253D%2522rating-number%2522%253E2333%253C%252Fspan%253E%29%250A%2509%2509%253C%252Fdiv%253E%250A%2509%2509%253Ch4%2520class%253D%2522product-price%2522%253ERs.120%2520%253Cspan%2520class%253D%2522original-price%2520text-strike-through%2522%253ERs.150%253C%252Fspan%253E%253Cspan%2520%2509%2509%2509class%253D%2522discount-percentage%2522%253E20%2525%2520off%253C%252Fspan%253E%253C%252Fh4%253E%250A%2509%2509%253Cbutton%2520class%253D%2522btn%2520btn-icon-text-primary-outline%2522%253E%253Cspan%2520class%253D%2522btn-icon%2522%253E%253Ci%2520class%253D%2522fa%2520fa-shopping-basket%2520%2509%2509margin-r%2522%253E%253C%252Fi%253E%253C%252Fspan%253EAdd%2520to%2520Basket%253C%252Fbutton%253E%250A%2509%253C%252Fdiv%253E%250A%2509%253Cdiv%2520class%253D%2522card-text-overlay%2522%253E%250A%2509%2509%253Ch2%2520class%253D%2522card-heading%2522%253EApple%253C%252Fh2%253E%250A%2509%2509%253Cp%2520class%253D%2522card-sub-heading%2522%253EFresh%2520apple%2520from%2520farm%253C%252Fp%253E%250A%2509%253C%252Fdiv%253E%250A%253C%252Fdiv%253E"
+                                style=" border:0; transform: scale(1); overflow:hidden;"
+                                sandbox="allow-scripts allow-same-origin">
+                            </iframe>
+                        </code>
+                    </section>
+                </div>
+                <div class="component-item-container">
+                    <h3>Horizontal Card</h3>
+                    <p class="text-2xl">This is horizontal card where data is provided in horizontal direction </p>
+                    <section class="sample-container flex">
+                        <div class="card-container horizontal">
+                            <div class="card-img horizontal-img border-right">
+                                <img src="../components/assets/images/apple.png" alt="Apple">
+                            </div>
+                            <div class="card-details card-details-horizontal">
+                                <h2 class="card-heading">Apple<span><i class="far fa-heart"></i></span></h2>
+                                <p class="card-sub-heading">Fresh apple from farm</p>
+                                <div class="rating text-lg">
+                                    <span class="rating-value">4.3<i class="fa fa-star checked margin-l"></i></span>
+                                    (<span class="rating-number">2333</span>)
+                                </div>
+                                <h4 class="product-price">Rs.120 <span class="original-price text-strike-through">Rs.150</span><span class="discount-percentage">20% off</span></h4>
+                                <button class="btn btn-icon-text-primary-outline"><span class="btn-icon"><i class="fa fa-shopping-basket margin-r"></i></span>Add to Basket</button>
+                            </div>
+                            <span class="badge-close">&times;</span>
+                        </div>
+                    </section>
+                    <section class="code-section">
+                        <code>
+                            <iframe
+                                src="https://carbon.now.sh/embed?bg=rgba%28239%2C40%2C44%2C1%29&t=base16-dark&wt=sharp&l=auto&width=990&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=143%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522card-container%2520horizontal%2522%253E%250A%2509%253Cdiv%2520class%253D%2522card-img%2520horizontal-img%2520border-right%2522%253E%250A%2509%2509%253Cimg%2520src%253D%2522..%252Fassets%252Fimages%252Fapple.png%2522%2520alt%253D%2522Apple%2522%253E%250A%2509%253C%252Fdiv%253E%250A%2509%253Cdiv%2520class%253D%2522card-details%2520card-details-horizontal%2522%253E%250A%2509%2509%253Ch2%2520class%253D%2522card-heading%2522%253EApple%253Cspan%253E%253Ci%2520class%253D%2522far%2520fa-heart%2522%253E%253C%252Fi%253E%253C%252Fspan%253E%253C%252Fh2%253E%250A%2509%2509%253Cp%2520class%253D%2522card-sub-heading%2522%253EFresh%2520apple%2520from%2520farm%253C%252Fp%253E%250A%2509%2509%253Cdiv%2520class%253D%2522rating%2520text-lg%2522%253E%250A%2509%2509%2509%253Cspan%2520class%253D%2522rating-value%2522%253E4.3%253Ci%2520class%253D%2522fa%2520fa-star%2520checked%2520margin-l%2522%253E%253C%252Fi%253E%253C%252Fspan%253E%250A%2509%2509%2509%28%253Cspan%2520class%253D%2522rating-number%2522%253E2333%253C%252Fspan%253E%29%250A%2509%2509%253C%252Fdiv%253E%250A%2509%2509%253Ch4%2520class%253D%2522product-price%2522%253ERs.120%2520%253Cspan%2520class%253D%2522original-price%2520text-strike-through%2522%253ERs.150%253C%252Fspan%253E%253Cspan%2520%2509%2509%2509class%253D%2522discount-percentage%2522%253E20%2525%2520off%253C%252Fspan%253E%253C%252Fh4%253E%250A%2509%2509%253Cbutton%2520class%253D%2522btn%2520btn-icon-text-primary-outline%2522%253E%253Cspan%2520class%253D%2522btn-icon%2522%253E%253Ci%2520class%253D%2522fa%2520fa-shopping-basket%2520%2509%2509%2520margin-r%2522%253E%253C%252Fi%253E%253C%252Fspan%253EAdd%2520to%2520Basket%253C%252Fbutton%253E%250A%2509%253C%252Fdiv%253E%250A%2509%253Cspan%2520class%253D%2522badge-close%2522%253E%2526times%253B%253C%252Fspan%253E%250A%253C%252Fdiv%253E"
+                                style=" border:0; transform: scale(1); overflow:hidden;"
+                                sandbox="allow-scripts allow-same-origin">
+                            </iframe>
+                        </code>
+                    </section>
+                </div>
+                <div class="component-item-container">
+                    <h3>Text Card</h3>
+                    <p class="text-2xl">Text card is the one widely used in the places where text is the main content for displaying information</p>
+                    <section class="sample-container flex">
+                        <div class="card-container horizontal text-card text-justify">
+                            <div class="card-img horizontal-img border-right text-hide">
+                                <img src="../components/assets/images/apple.png" alt="Apple">
+                            </div>
+                            <div class="card-details card-details-horizontal text-hide">
+                                <h2 class="card-heading">Apple<span><i class="far fa-heart"></i></span></h2>
+                                <p class="card-sub-heading">Fresh apple from farm</p>
+                                <div class="rating text-lg">
+                                    <span class="rating-value">4.3<i class="fa fa-star checked margin-l"></i></span>
+                                    (<span class="rating-number">2333</span>)
+                                </div>
+                                <h4 class="product-price">Rs.120 <span class="original-price text-strike-through">Rs.150</span><span class="discount-percentage">20% off</span></h4>
+                                <button class="btn btn-icon-text-primary-outline"><span class="btn-icon"><i class="fa fa-shopping-basket margin-r"></i></span>Add to Basket</button>
+                            </div>
+                            <span class="badge-close">&times;</span>
+                        </div>
+                        <div class="card-container horizontal">
+                            <div class="card-details card-details-horizontal">
+                                <h2 class="card-heading">Text Heading<span><i class="far fa-heart"></i></span></h2>
+                                <p class="text-justify">This is text card used to display the text paragraph in the card Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                                <button class="btn btn-outline-primary">Send Message</button>
+                            </div>
+                            <span class="badge-close">&times;</span>
+                        </div>
+                    </section>
+                    <section class="code-section">
+                        <code>
+                            <iframe
+                                src="https://carbon.now.sh/embed?bg=rgba%28239%2C40%2C44%2C1%29&t=base16-dark&wt=sharp&l=auto&width=990&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=143%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522card-container%2520horizontal%2520text-card%2520text-justify%2522%253E%250A%2509%253Cdiv%2520class%253D%2522card-img%2520horizontal-img%2520border-right%2520text-hide%2522%253E%250A%2509%2509%253Cimg%2520src%253D%2522..%252Fassets%252Fimages%252Fapple.png%2522%2520alt%253D%2522Apple%2522%253E%250A%2509%253C%252Fdiv%253E%250A%2509%253Cdiv%2520class%253D%2522card-details%2520card-details-horizontal%2520text-hide%2522%253E%250A%2509%2509%253Ch2%2520class%253D%2522card-heading%2522%253EApple%253Cspan%253E%253Ci%2520class%253D%2522far%2520fa-heart%2522%253E%253C%252Fi%253E%253C%252Fspan%253E%253C%252Fh2%253E%250A%2509%2509%253Cp%2520class%253D%2522card-sub-heading%2522%253EFresh%2520apple%2520from%2520farm%253C%252Fp%253E%250A%2509%2509%253Cdiv%2520class%253D%2522rating%2520text-lg%2522%253E%250A%2509%2509%2509%253Cspan%2520class%253D%2522rating-value%2522%253E4.3%253Ci%2520class%253D%2522fa%2520fa-star%2520checked%2520margin-l%2522%253E%253C%252Fi%253E%253C%252Fspan%253E%250A%2509%2509%2509%28%253Cspan%2520class%253D%2522rating-number%2522%253E2333%253C%252Fspan%253E%29%250A%2509%2509%253C%252Fdiv%253E%250A%2509%2509%253Ch4%2520class%253D%2522product-price%2522%253ERs.120%2520%253Cspan%2520class%253D%2522original-price%2520text-strike-through%2522%253ERs.150%253C%252Fspan%253E%253Cspan%2520%2509%2509%2509class%253D%2522discount-percentage%2522%253E20%2525%2520off%253C%252Fspan%253E%253C%252Fh4%253E%250A%2509%2509%253Cbutton%2520class%253D%2522btn%2520btn-icon-text-primary-outline%2522%253E%253Cspan%2520class%253D%2522btn-icon%2522%253E%253Ci%2520class%253D%2522fa%2520fa-shopping-basket%2520%2509%2509%2520margin-r%2522%253E%253C%252Fi%253E%253C%252Fspan%253EAdd%2520to%2520Basket%253C%252Fbutton%253E%250A%2509%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253Cspan%2520class%253D%2522badge-close%2522%253E%2526times%253B%253C%252Fspan%253E%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522card-container%2520horizontal%2522%253E%250A%2509%253Cdiv%2520class%253D%2522card-details%2520card-details-horizontal%2522%253E%250A%2509%2509%253Ch2%2520class%253D%2522card-heading%2522%253EText%2520Heading%253Cspan%253E%253Ci%2520class%253D%2522far%2520fa-heart%2522%253E%253C%252Fi%253E%253C%252Fspan%253E%253C%252Fh2%253E%250A%2509%2509%253Cp%2520class%253D%2522text-justify%2522%253EThis%2520is%2520text%2520card%2520used%2520to%2520display%2520the%2520text%2520paragraph%2520in%2520the%2520card%2520Lorem%2520Ipsum%2520is%2520%2509%2509simply%2520dummy%2520text%2520of%2520the%2520printing%2520and%2520typesetting%2520industry.%2520Lorem%2520Ipsum%2520has%2520been%2520the%2520industry%27s%2520standard%2520%2509%2509%2520dummy%2520text%2520ever%2520since%2520the%25201500s%252C%2520when%2520an%2520unknown%2520printer%2520took%2520a%2520galley%2520of%2520type%2520and%2520scrambled%2520it%2520to%2520make%2520a%2520%2509%2509%2520%2520%2520type%2520specimen%2520book.%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2509%253Cbutton%2520class%253D%2522btn%2520btn-outline-primary%2522%253ESend%2520Message%253C%252Fbutton%253E%250A%2509%253C%252Fdiv%253E%250A%2509%253Cspan%2520class%253D%2522badge-close%2522%253E%2526times%253B%253C%252Fspan%253E%250A%253C%252Fdiv%253E"
+                                style=" border:0; transform: scale(1); overflow:hidden;"
+                                sandbox="allow-scripts allow-same-origin">
+                            </iframe>
+                        </code>
+                    </section>
+                </div>
+            </div>
+            <hr>
+            <div class="component-container" id="image">
+                <h1 class="text-underline">Image</h1>
+                <p class="text-3xl">In this library there are 3 variant of images first one is responsive image, round shaped image and square shaped border curved image style </p>
+                <div class="component-item-container">
+                    <h3>Responsive image</h3>
+                    <section class="sample-container">
+                        <img class="img-responsive" src="../components/assets/images/nature.jpg" alt="Image">
+                    </section>
+                     <section class="code-section">
+                        <code>
+                            <iframe
+                                src="https://carbon.now.sh/embed?bg=rgba%28239%2C40%2C44%2C1%29&t=base16-dark&wt=sharp&l=auto&width=990&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=143%25&si=false&es=2x&wm=false&code=%250A%250A%253Cimg%2520class%253D%2522img-responsive%2522%2520src%253D%2522..%252Fcomponents%252Fassets%252Fimages%252Fnature.jpg%2522%2520alt%253D%2522Image%2522%253E%250A%250A%250A"
+                                style="  border:0; transform: scale(1); overflow:hidden;"
+                                sandbox="allow-scripts allow-same-origin">
+                            </iframe>
+                        </code>
+                    </section>
+                </div>
+                <div class="component-item-container">
+                    <h3>Round shaped image</h3>
+                    <section class="sample-container">
+                        <div class="img-landscape round"><img src="../components/assets/images/nature.jpg" alt="Image"></div>
+                    </section>
+                     <section class="code-section">
+                        <code>
+                            <iframe
+                                src="https://carbon.now.sh/embed?bg=rgba%28239%2C40%2C44%2C1%29&t=base16-dark&wt=sharp&l=auto&width=990&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=143%25&si=false&es=2x&wm=false&code=%250A%250A%253Cdiv%2520class%253D%2522img-landscape%2520round%2522%253E%253Cimg%2520src%253D%2522..%252Fcomponents%252Fassets%252Fimages%252Fnature.jpg%2522%2520alt%253D%2522Image%2522%253E%253C%252Fdiv%253E%250A%250A%250A"
+                                style="  border:0; transform: scale(1); overflow:hidden;"
+                                sandbox="allow-scripts allow-same-origin">
+                            </iframe>
+                        </code>
+                    </section>
+                </div>
+                <div class="component-item-container">
+                    <h3>Square shaped image</h3>
+                    <section class="sample-container">
+                        <div class="img-landscape square"><img src="../components/assets/images/nature.jpg" alt="Image"></div>
+                    </section>
+                     <section class="code-section">
+                        <code>
+                            <iframe
+                                src="https://carbon.now.sh/embed?bg=rgba%28239%2C40%2C44%2C1%29&t=base16-dark&wt=sharp&l=auto&width=990&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=143%25&si=false&es=2x&wm=false&code=%250A%250A%2520%253Cdiv%2520class%253D%2522img-landscape%2520square%2522%253E%253Cimg%2520src%253D%2522..%252Fcomponents%252Fassets%252Fimages%252Fnature.jpg%2522%2520alt%253D%2522Image%2522%253E%253C%252Fdiv%253E%250A%250A%250A"
+                                style=" border:0; transform: scale(1); overflow:hidden;"
+                                sandbox="allow-scripts allow-same-origin">
+                            </iframe>
+                        </code>
+                    </section>
+                </div>
+            </div>
+            <hr>
+            <div class="component-container" id="input">
+                <h1 class="text-underline">Input</h1>
+                <p class="text-3xl">Input componenent is the one which is used for taking input from user for different types of forms, some input fields take just text and do processing and also some forms takes input and does processing to check the input value</p>
+                <div class="component-item-container">
+                    <h3>Simple input fields</h3>
+                    <p class="text-2xl">These are the one which don't have any extra styling for input fields, either with simple border or with an underline for input</p>
+                    <section class="sample-container flex">
+                        <input class="input outlined" type="text" placeholder="Enter your input">
+                        <input class="input standard" type="text" placeholder="Enter your input">
+                    </section>
+                     <section class="code-section">
+                        <code>
+                            <iframe
+                                src="https://carbon.now.sh/embed?bg=rgba%28239%2C40%2C44%2C1%29&t=base16-dark&wt=sharp&l=auto&width=990&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=143%25&si=false&es=2x&wm=false&code=%250A%2520%253Cinput%2520class%253D%2522input%2520outlined%2522%2520type%253D%2522text%2522%2520placeholder%253D%2522Enter%2520your%2520input%2522%253E%250A%2520%253Cinput%2520class%253D%2522input%2520standard%2522%2520type%253D%2522text%2522%2520placeholder%253D%2522Enter%2520your%2520input%2522%253E%250A%250A%250A"
+                                style=" border:0; transform: scale(1); overflow:hidden;"
+                                sandbox="allow-scripts allow-same-origin">
+                            </iframe>
+                        </code>
+                    </section>
+                </div>
+                <div class="component-item-container">
+                    <h3>Labeled input fields</h3>
+                    <p class="text-2xl">These are the inputs provided with label about kind of input expected in the field</p>
+                    <section class="sample-container flex">
+                        <div class="input input-labeled outlined">
+                            <label for="username">Username</label>
+                            <input type="text" name="username" placeholder="Enter Username">
+                        </div>
+                        <div class="input input-labeled standard">
+                            <label for="username">Username</label>
+                            <input type="text" name="username" placeholder="Enter Username">
+                        </div>
+                    </section>
+                     <section class="code-section">
+                        <code>
+                            <iframe
+                                src="https://carbon.now.sh/embed?bg=rgba%28239%2C40%2C44%2C1%29&t=base16-dark&wt=sharp&l=auto&width=990&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=143%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522input%2520input-labeled%2520outlined%2522%253E%250A%2509%253Clabel%2520for%253D%2522username%2522%253EUsername%253C%252Flabel%253E%250A%2509%253Cinput%2520type%253D%2522text%2522%2520name%253D%2522username%2522%2520placeholder%253D%2522Enter%2520Username%2522%253E%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522input%2520input-labeled%2520standard%2522%253E%250A%2509%253Clabel%2520for%253D%2522username%2522%253EUsername%253C%252Flabel%253E%250A%2509%253Cinput%2520type%253D%2522text%2522%2520name%253D%2522username%2522%2520placeholder%253D%2522Enter%2520Username%2522%253E%250A%253C%252Fdiv%253E"
+                                style=" border:0; transform: scale(1); overflow:hidden;"
+                                sandbox="allow-scripts allow-same-origin">
+                            </iframe>
+                        </code>
+                    </section>
+                </div>
+                <div class="component-item-container">
+                    <h3>Input field with icon</h3>
+                    <p class="text-2xl">These are the input fields having icon either as button or just an icon for display, Also error styles provided for the form input fields</p>
+                    <section class="sample-container flex">
+                        <div class="input search-field outlined ">
+                            <input type="text" name="username" placeholder="Search here...">
+                            <button class="search-icon"><i class="fa fa-search"></i></button>
+                        </div>
+                        <div class="input">
+                            <div class="input-field outlined">
+                                <button class="input-icon"><i class="far fa-envelope"></i></button>
+                                <input type="email" placeholder="Enter Email Address" required>
+                            </div>    
+                            <div class="form-input-message">
+                                <span class="input-validation error-msg">
+                                    <span class="message-icon"><i class="fa fa-exclamation-circle"></i></span>
+                                    Please Enter Email in correct format
+                                </span><br>
+                                <span class="input-validation success-msg">
+                                    <span class="message-icon"><i class="fa fa-check-circle"></i></span>
+                                    Success
+                                </span>
+                            </div>
+                        </div>
+                    </section>
+                     <section class="code-section">
+                        <code>
+                            <iframe
+                                src="https://carbon.now.sh/embed?bg=rgba%28239%2C40%2C44%2C1%29&t=base16-dark&wt=sharp&l=auto&width=990&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=143%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522input%2520search-field%2520outlined%2520%2522%253E%250A%2509%253Cinput%2520type%253D%2522text%2522%2520name%253D%2522username%2522%2520placeholder%253D%2522Search%2520here...%2522%253E%250A%2509%253Cbutton%2520class%253D%2522search-icon%2522%253E%253Ci%2520class%253D%2522fa%2520fa-search%2522%253E%253C%252Fi%253E%253C%252Fbutton%253E%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522input%2522%253E%250A%2509%253Cdiv%2520class%253D%2522input-field%2520outlined%2522%253E%250A%2509%2509%253Cbutton%2520class%253D%2522input-icon%2522%253E%253Ci%2520class%253D%2522far%2520fa-envelope%2522%253E%253C%252Fi%253E%253C%252Fbutton%253E%250A%2509%2509%253Cinput%2520type%253D%2522email%2522%2520placeholder%253D%2522Enter%2520Email%2520Address%2522%2520required%253E%250A%2509%253C%252Fdiv%253E%2520%2520%2520%2520%250A%2509%253Cdiv%2520class%253D%2522form-input-message%2522%253E%250A%2509%2509%253Cspan%2520class%253D%2522input-validation%2520error-msg%2522%253E%250A%2509%2509%2509%253Cspan%2520class%253D%2522message-icon%2522%253E%253Ci%2520class%253D%2522fa%2520fa-exclamation-circle%2522%253E%253C%252Fi%253E%253C%252Fspan%253E%250A%2509%2509%2509Please%2520Enter%2520Email%2520in%2520correct%2520format%250A%2509%2509%253C%252Fspan%253E%250A%2509%2509%253Cspan%2520class%253D%2522input-validation%2520success-msg%2522%253E%250A%2509%2509%2509%253Cspan%2520class%253D%2522message-icon%2522%253E%253Ci%2520class%253D%2522fa%2520fa-check-circle%2522%253E%253C%252Fi%253E%253C%252Fspan%253E%250A%2509%2509%2509Success%250A%2509%2509%253C%252Fspan%253E%250A%2509%253C%252Fdiv%253E%250A%253C%252Fdiv%253E"
+                                style=" border:0; transform: scale(1); overflow:hidden;"
+                                sandbox="allow-scripts allow-same-origin">
+                            </iframe>
+                        </code>
+                    </section>
+                </div>
+                <div class="component-item-container">
+                    <h3>Text area input</h3>
+                    <p class="text-2xl">This is the input type used in social media kind of platform or where it is required to give huge amount of text</p>
+                    <section class="sample-container flex">
+                        <div class="text-area-container">
+                            <textarea cols="30" rows="10"></textarea>
+                            <button class="btn btn-icon-text-primary-outline btn-send"><i class="fa fa-paper-plane btn-icon margin-r"></i>Send</button>
+                        </div>
+                    </section>
+                     <section class="code-section">
+                        <code>
+                            <iframe
+                                src="https://carbon.now.sh/embed?bg=rgba%28239%2C40%2C44%2C1%29&t=base16-dark&wt=sharp&l=auto&width=990&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=143%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522text-area-container%2522%253E%250A%2509%253Ctextarea%2520cols%253D%252230%2522%2520rows%253D%252210%2522%253E%253C%252Ftextarea%253E%250A%2509%253Cbutton%2520class%253D%2522btn%2520btn-icon-text-primary-outline%2520btn-send%2522%253E%253Ci%2520class%253D%2522fa%2520fa-paper-plane%2520btn-icon%2520margin-r%2522%253E%2509%2509%253C%252Fi%253ESend%253C%252Fbutton%253E%250A%253C%252Fdiv%253E"
+                                style=" border:0; transform: scale(1); overflow:hidden;"
+                                sandbox="allow-scripts allow-same-origin">
+                            </iframe>
+                        </code>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <span class="text-2xl footer-text"> <span class="brand-style">FreshUI</span> developed and maintained by Deekshith M D</span>
+        <ul class="footer-social-icons">
+            <li class="list-inline-item">
+                <a href="https://github.com/deekshithmd" class="nav-icon-link link-style-none"><i class="fab fa-github nav-icon"></i> </a>
+            </li>
+            <li class="list-inline-item">
+                <a href="https://in.linkedin.com/in/deekshith-m-d-42a306154" class="nav-icon-link link-style-none"><i class="fab fa-linkedin nav-icon"></i></a>
+            </li>
+            <li class="list-inline-item">
+                <a href="http://twitter.com/deekshith_md" class="nav-icon-link link-style-none"><i class="fab fa-twitter nav-icon"></i></a>
+            </li>
+        </ul>
+    </footer>
+    <button class="btn btn-float-action go-top"><a class="link-style-none white-symbol" href="#"><i class="fas fa-angle-up"></i></a></button>
+
+</body>
+</html>

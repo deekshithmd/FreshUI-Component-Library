@@ -1,0 +1,101 @@
+.h1, h1{
+    font-size: 3.2rem;
+}
+
+.h2, h2{
+    font-size: 2.4rem;
+}
+
+.h3, h3{
+    font-size: 1.87rem;
+}
+
+.h4, h4{
+    font-size: 1.6rem;
+}
+
+.h5, h5{
+    font-size: 1.32rem;
+}
+
+.h6, h6{
+    font-size: 1.07rem;
+}
+
+p{
+    font-size: 1.6rem;
+}
+
+.subtitle-1{
+    font-weight: 500;
+    font-size: 2.93rem;
+    margin-bottom: 1rem;
+}
+
+.subtitle-2{
+    font-weight: 400;
+    font-size: 2.2rem;
+    margin-bottom: 1rem;
+}
+
+.text-xs{
+    font-size: 0.6rem;
+    line-height: 1rem;  
+}
+
+.text-sm{
+    font-size: 0.8rem;
+    line-height: 1.25rem;
+}
+
+.text-md{
+    font-size: 1rem;
+    line-height: 1.6rem;
+}
+
+.text-lg{
+    font-size: 1.2rem;
+    line-height: 1.75rem;
+}
+
+.text-xl{
+    font-size: 1.4rem;
+    line-height: 1.75rem;
+}
+
+.text-2xl{
+    font-size: 1.6rem;
+    line-height: 1.9rem;
+}
+
+.text-3xl{
+    font-size: 1.8rem;
+    line-height: 1.9rem;
+}
+
+.text-4xl{
+    font-size: 2rem;
+    line-height: 2rem;
+}
+
+.text-justify{
+    text-align: justify;
+}
+
+.text-left{
+    text-align: left;
+}
+
+.text-right{
+    text-align: right;
+}
+
+.text-center{
+    text-align: center;
+}
+
+.text-underline{
+    text-decoration: underline;
+}
+
+

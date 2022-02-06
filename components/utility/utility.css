@@ -1,0 +1,64 @@
+.margin-l{
+    margin-left: 1rem;
+}
+
+.margin-r{
+    margin-right: 1rem;
+}
+
+.margin-t{
+    margin-top: 1rem;
+}
+
+.margin-b{
+    margin-bottom: 1rem;
+}
+
+.margin-lr{
+    margin: auto 1rem;
+}
+
+.margin{
+    margin: 1rem;
+}
+
+.text-strike-through{
+    text-decoration: line-through;
+}
+
+.border-bottom{
+    border-bottom: 1px solid var(--border-black);
+}
+
+.border-right{
+    border-right: 1px solid var(--border-black);
+}
+
+button:hover{
+    cursor: pointer;
+}
+
+ul li{
+    list-style: none;
+}
+
+a{
+    color: var(--primary-text-color);
+}
+
+hr{
+    margin: 1rem auto;
+   border: 1px solid var(--border-black);
+   width: 100%;
+}
+
+.flex{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.white-symbol{
+    color: var(--secondary-text-color)
+}
