@@ -1,0 +1,34 @@
+:root{
+    --primary-color: #0bb32f;
+    --secondary-color: #f8962e;
+
+    --primary-text-color: #3d3d3d;
+    --secondary-text-color: #d3d2d2;
+
+    --background-color: #eeeeee;
+
+    --primary-background:#b1edf1;
+    --primary-alert-text-color:#2a8bdb;
+
+    --success-background:#84e6c5;
+    --success-text-color:#075f16;
+
+    --danger-background:#f0d4d4;
+    --danger-text-color:#e01c1c;
+
+    --warning-background:#f3e4c9;
+    --warning-text-color:#ffa600;
+
+    --close-btn:#e01c1c;
+    --red-background:#e01c1c;
+
+    --badge-shadow: #a36b02;
+
+    --primary-hover:#049c25;
+    --secondary-hover:#fa8508;
+
+    --border-white: #ffffff;
+    --border-black: #000000;
+
+    --light-black-background:#4e4e4e;
+}

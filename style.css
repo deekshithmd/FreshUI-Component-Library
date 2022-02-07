@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Calistoga&display=swap');
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css");
+@import url(components/badge/badge.css);
+@import url(components/card/card.css);
+@import url(components/badge/badge.css);
+@import url(components/button/button.css);
+@import url(components/alert/alert.css);
+@import url(components/avatar/avatar.css);
+@import url(components/image/image.css);
+@import url(components/input/input.css);
+@import url(components/typography/typography.css);
+@import url(components/utility/utility.css);
+@import url(components/color/color.css);
+@import url(docsite/doc.css);
+@import url(index.css);
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--background-color);
+    width: 100vw;
+}
+
+*{
+    box-sizing: border-box;
+}
