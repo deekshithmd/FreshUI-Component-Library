@@ -1,0 +1,136 @@
+.badge-container{
+    position: relative;
+}
+
+.status-badge-avatar{
+    position: absolute;
+    width: 30%;
+    height: 30%;
+    left: 67%;
+    bottom: 6%;
+    border-radius: 50%;
+    border: 2px solid var(--border-white);
+}
+
+.badge-status-busy{
+    background-color: var(--danger-text-color);
+}
+
+.badge-status-available{
+    background-color: var(--success-text-color);
+}
+
+.badge-status-away{
+    background-color: var(--warning-text-color);
+}
+
+.badge-btn{
+    font-size: 2.5rem;
+    border: none;
+    background-color: transparent;
+}
+
+.status-badge-icon{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: -1rem;
+    right: -1rem;
+    width: 2.5rem;
+    height: 2.5rem;
+    font-size: 1rem;
+    color: var(--secondary-text-color);
+    border-radius: 50%;
+    border: 2px solid var(--border-white);
+    padding: 5px;
+}
+
+.background-primary{
+    background-color: var(--primary-color);
+}
+
+.background-secondary{
+    background-color: var(--secondary-color);
+}
+
+.background-red{
+    background-color: var(--red-background);
+}
+
+.text-badge{
+    padding: 0.5rem 0.7rem;
+}
+
+.border-curve-badge{
+    border-radius: 5px;
+}
+
+.round-pill-badge{
+    border-radius: 2rem;
+}
+
+.card{
+    position: relative;
+    width: 25rem;
+    height: 40rem;
+    border-radius: 1rem;
+    background-color: var(--primary-color);
+    margin: 2rem;
+}
+
+.badge span{
+    position: absolute;
+    width: 7rem;
+    height: 7rem;
+    top: -0.5rem;
+    right: -0.5rem;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.badge-new span::before{
+    content: 'new';
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    font-weight: 600;
+    position: absolute;
+    width: 150%;
+    height: 30%;
+    background-color: var(--secondary-color);
+    transform: rotate(45deg) translateY(-1rem);
+}
+
+.badge-offer span::before{
+    content: '20% off';
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    font-weight: 600;
+    position: absolute;
+    width: 150%;
+    height: 30%;
+    background-color: var(--secondary-color);
+    transform: rotate(45deg) translateY(-1rem);
+}
+
+.badge span::after{
+    position: absolute;
+    content: '';
+    width: 0.5rem;
+    height: 0.5rem;
+    background-color: var(--badge-shadow);
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+    box-shadow: -6.5rem -6.5rem var(--badge-shadow);
+}
+
