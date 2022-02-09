@@ -1,0 +1,161 @@
+.card-container{
+    margin: 1rem;
+    padding: 0 0.5rem ;
+    border-radius: 8px;
+    box-shadow: 0px 0px 7px var(--primary-color);
+    position: relative;
+}
+
+.card-container:hover{
+    transform: scale(1.02);
+    transition: .4s;
+}
+
+.vertical{
+    height: auto;
+    width: 20rem;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.horizontal{
+    box-sizing: border-box;
+    display: flex;
+    width: 39rem;
+    height: auto;
+    padding: 10px;
+}
+
+.card-img{
+    width: 18rem;
+    height: 18rem;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+.card-img img{
+    width: 100%;
+    height: 100%;
+}
+
+.card-details{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 0.5rem;
+}
+
+.card-heading{
+    font-size: 2rem;
+    margin: 0.5rem 0rem; 
+    display: flex;
+    justify-content: space-between;
+}
+
+.card-sub-heading{
+    font-size: 1.5rem;
+    margin: 0.3rem 0;
+}
+
+.rating-data{
+    font-size: 1.4rem;
+}
+
+.rating-value{
+    width: 2rem;
+    height: auto;
+    background: var(--primary-color);
+    padding: 4px;
+    color: var(--secondary-text-color);
+}
+
+.product-price{
+    font-size: 1.5rem;
+    margin: 0.5rem 0;
+}
+
+.original-price{
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+
+.discount-percentage{
+    font-size: 1.3rem;
+    font-weight: 500;
+    margin-left: 0.3rem;
+    color: var(--primary-color);
+}
+
+.card-details button{
+    margin-top: 0.6rem;
+}
+
+.card-details-horizontal{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+}
+
+.checked{
+    color: var(--secondary-color);
+}
+
+/*Badge for new Arrivals*/
+.badge-new-box{
+    background-color: var(--secondary-color);
+    position: absolute;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    font-weight: 800;
+    top: 0.4rem;
+    right: -2.5rem;
+    border: 3px solid var(--primary-background);
+}
+
+/*Badge for closing action*/
+.badge-close{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.5rem;
+    font-weight: 800;
+    top: -1rem;
+    right: -1rem;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    background-color: var(--secondary-color);
+}
+
+.overlay{
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+.card-text-overlay{
+    position: absolute;
+    bottom: 40%;
+    margin-left: 0.5rem;
+}
+
+.out-of-stock{
+    bottom: 14rem;
+    left: 15%;
+    transform: rotate(-55deg);
+    color: var(--primary-text-color);
+}
+
+.text-card{
+    padding: 3rem;
+}
+
+.text-hide{
+    display: none;
+}
+
+.text-card::after{
+    content: "This is text card used to display the text paragraph in the card Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. ";
+    font-size: 1.5rem;
+}
+
