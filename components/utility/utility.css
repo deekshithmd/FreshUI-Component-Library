@@ -62,3 +62,7 @@ hr{
 .white-symbol{
     color: var(--secondary-text-color)
 }
+
+.text-primary{
+    color: var(--primary-color);
+}
