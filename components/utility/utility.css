@@ -66,3 +66,7 @@ hr{
 .text-primary{
     color: var(--primary-color);
 }
+
+.max-height-card-img{
+    max-height: 18rem;
+}
