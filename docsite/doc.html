@@ -58,6 +58,9 @@
                 <li class="component-item text-3xl"><a href="#card" class="link-style-none">Card</a></li>
                 <li class="component-item text-3xl"><a href="#image" class="link-style-none">Image</a></li>
                 <li class="component-item text-3xl"><a href="#input" class="link-style-none">Input</a></li>
+                <li class="component-item text-2xl"><a href="#navigation" class="link-style-none">Navigation</a></li>
+                <li class="component-item text-2xl"><a href="#chip" class="link-style-none">Chip</a></li>
+                <li class="component-item text-2xl"><a href="#snackbar" class="link-style-none">Snackbar</a></li>
             </ul>
         </aside>
         <div class="main">
@@ -889,6 +892,174 @@
                         <code>
                             <iframe
                                 src="https://carbon.now.sh/embed?bg=rgba%28239%2C40%2C44%2C1%29&t=base16-dark&wt=sharp&l=auto&width=990&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=143%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522text-area-container%2522%253E%250A%2509%253Ctextarea%2520cols%253D%252230%2522%2520rows%253D%252210%2522%253E%253C%252Ftextarea%253E%250A%2509%253Cbutton%2520class%253D%2522btn%2520btn-icon-text-primary-outline%2520btn-send%2522%253E%253Ci%2520class%253D%2522fa%2520fa-paper-plane%2520btn-icon%2520margin-r%2522%253E%2509%2509%253C%252Fi%253ESend%253C%252Fbutton%253E%250A%253C%252Fdiv%253E"
+                                style=" border:0; transform: scale(1); overflow:hidden;"
+                                sandbox="allow-scripts allow-same-origin">
+                            </iframe>
+                        </code>
+                    </section>
+                </div>
+            </div>
+            <hr>
+            <div class="component-container" id="navigation">
+                <h1 class="text-underline">Navigation</h1>
+                <p class="text-3xl">Navigation bar is the one which is present at the top of the webpage, this area contains some basic functionality of the website.Thi is one of the important component for website</p>
+                <div class="component-item-container">
+                    <section class="sample-container flex">
+                        <nav class="navigation-bar">
+                            <section class="brand logo">
+                                    <a href="#" >
+                                        <img src="../components/assets/brand-logo/freshbuy-logo.png" alt="logo">
+                                    </a>
+                            </section>
+                            <section class="search-item">
+                                <div class="input search-field outlined ">
+                                    <button class="search-icon"><i class="fa fa-search"></i></button>
+                                    <input type="text" name="username" placeholder="Search here...">
+                                </div>
+                            </section>
+                            <ul class="list-style-none account-data">
+                                <li class="list-inline-item">
+                                    <div class="avatar avatar-text-xs avatar-text img-round user-profile" role="img" alt="Avatar">AB</div>
+                                </li>
+                                <li class="list-inline-item">
+                                    <button class="badge-container badge-btn">
+                                        <a href="#">
+                                            <i class="fas fa-heart icon"></i>
+                                            <span class="status-badge-icon bg-red">5</span>
+                                        </a> 
+                                    </button>
+                                </li>
+                                <li class="list-inline-item">
+                                    <button class="badge-container badge-btn">
+                                        <a href="#">
+                                            <i class="fas fa-cart-shopping"></i>
+                                            <span class="status-badge-icon bg-red">3</span> 
+                                        </a>
+                                    </button>
+                                </li>
+                                <li class="list-inline-item">
+                                    <button class="btn btn-icon-primary user-signout">
+                                        <a href="#">
+                                            <i class="fa fa-sign-out fa-2x"></i>
+                                        </a>
+                                    </button>
+                                </li>
+                            </ul>
+                        </nav>
+                    </section>
+                     <section class="code-section">
+                        <code>
+                            <iframe
+                                src="https://carbon.now.sh/embed?bg=rgba%28239%2C40%2C44%2C1%29&t=base16-dark&wt=sharp&l=auto&width=990&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=143%25&si=false&es=2x&wm=false&code=%253Cnav%2520class%253D%2522navigation-bar%2522%253E%250A%2509%253Csection%2520class%253D%2522brand%2520logo%2522%253E%250A%2509%2509%253Ca%2520href%253D%2522%2523%2522%2520%253E%250A%2509%2509%2509%253Cimg%2520src%253D%2522..%252Fcomponents%252Fassets%252Fbrand-logo%252Ffreshbuy-logo.png%2522%2520alt%253D%2522logo%2522%253E%250A%2509%2509%253C%252Fa%253E%250A%2509%253C%252Fsection%253E%250A%2509%253Csection%2520class%253D%2522search-item%2522%253E%250A%2509%2509%253Cdiv%2520class%253D%2522input%2520search-field%2520outlined%2520%2522%253E%250A%2509%2509%2509%253Cbutton%2520class%253D%2522search-icon%2522%253E%253Ci%2520class%253D%2522fa%2520fa-search%2522%253E%253C%252Fi%253E%253C%252Fbutton%253E%250A%2509%2509%2509%253Cinput%2520type%253D%2522text%2522%2520name%253D%2522username%2522%2520placeholder%253D%2522Search%2520here...%2522%253E%250A%2509%2509%253C%252Fdiv%253E%250A%2509%253C%252Fsection%253E%250A%2509%253Cul%2520class%253D%2522list-style-none%2520account-data%2522%253E%250A%2509%2509%253Cli%2520class%253D%2522list-inline-item%2522%253E%250A%2509%2509%2509%253Cdiv%2520class%253D%2522avatar%2520avatar-text-xs%2520avatar-text%2520img-round%2520user-profile%2522%2520role%253D%2522img%2522%2520alt%253D%2522Avatar%2522%253EAB%253C%252Fdiv%253E%250A%2509%2509%253C%252Fli%253E%250A%2509%2509%253Cli%2520class%253D%2522list-inline-item%2522%253E%250A%2509%2509%2509%253Cbutton%2520class%253D%2522badge-container%2520badge-btn%2522%253E%250A%2509%2509%2509%2509%253Ca%2520href%253D%2522%2523%2522%253E%250A%2509%2509%2509%2509%2509%253Ci%2520class%253D%2522fas%2520fa-heart%2520icon%2522%253E%253C%252Fi%253E%250A%2509%2509%2509%2509%2509%253Cspan%2520class%253D%2522status-badge-icon%2520bg-red%2522%253E5%253C%252Fspan%253E%250A%2509%2509%2509%2509%253C%252Fa%253E%2520%250A%2509%2509%2509%253C%252Fbutton%253E%250A%2509%2509%253C%252Fli%253E%250A%2509%2509%253Cli%2520class%253D%2522list-inline-item%2522%253E%250A%2509%2509%2509%253Cbutton%2520class%253D%2522badge-container%2520badge-btn%2522%253E%250A%2509%2509%2509%2509%253Ca%2520href%253D%2522%2523%2522%253E%250A%2509%2509%2509%2509%2509%253Ci%2520class%253D%2522fas%2520fa-cart-shopping%2522%253E%253C%252Fi%253E%250A%2509%2509%2509%2509%2509%253Cspan%2520class%253D%2522status-badge-icon%2520bg-red%2522%253E3%253C%252Fspan%253E%2520%250A%2509%2509%2509%2509%253C%252Fa%253E%250A%2509%2509%2509%253C%252Fbutton%253E%250A%2509%2509%253C%252Fli%253E%250A%2509%2509%253Cli%2520class%253D%2522list-inline-item%2522%253E%250A%2509%2509%2509%253Cbutton%2520class%253D%2522btn%2520btn-icon-primary%2520user-signout%2522%253E%250A%2509%2509%2509%2509%253Ca%2520href%253D%2522%2523%2522%253E%250A%2509%2509%2509%2509%2509%253Ci%2520class%253D%2522fa%2520fa-sign-out%2520fa-2x%2522%253E%253C%252Fi%253E%250A%2509%2509%2509%2509%253C%252Fa%253E%250A%2509%2509%2509%253C%252Fbutton%253E%250A%2509%2509%253C%252Fli%253E%250A%2509%253C%252Ful%253E%250A%253C%252Fnav%253E"
+                                style=" border:0; transform: scale(1); overflow:hidden;"
+                                sandbox="allow-scripts allow-same-origin">
+                            </iframe>
+                        </code>
+                    </section>
+                </div>
+            </div>
+            <hr>
+            <div class="component-container" id="chip">
+                <h1 class="text-underline">Chip</h1>
+                <p class="text-3xl">Chip is the one small component which is basically used to filter or to enter information</p>
+                <div class="component-item-container">
+                    <h3>Basic chip</h3>
+                    <p class="text-2xl">This is the basic version of chip which contains just a text</p>
+                    <section class="sample-container flex">
+                        <span class="chip text-chip">
+                            John Doe
+                        </span>
+                    </section>
+                     <section class="code-section">
+                        <code>
+                            <iframe
+                                src="https://carbon.now.sh/embed?bg=rgba%28239%2C40%2C44%2C1%29&t=base16-dark&wt=sharp&l=auto&width=990&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=143%25&si=false&es=2x&wm=false&code=%250A%253Cspan%2520class%253D%2522chip%2520text-chip%2522%253E%250A%2509John%2520Doe%250A%253C%252Fspan%253E%250A"
+                                style=" border:0; transform: scale(1); overflow:hidden;"
+                                sandbox="allow-scripts allow-same-origin">
+                            </iframe>
+                        </code>
+                    </section>
+                </div>
+                <div class="component-item-container">
+                    <h3>Chip with close button</h3>
+                    <p class="text-2xl">This is the basic version of chip which contains just text and close button with that</p>
+                    <section class="sample-container flex">
+                        <div class="chip text-chip">
+                            <span class="chip-text margin-r">John Doe</span> 
+                            <span class="chip-close text-bold" onclick="this.parentElement.style.display='none'">&times;</span>
+                        </div>
+                    </section>
+                     <section class="code-section">
+                        <code>
+                            <iframe
+                                src="https://carbon.now.sh/embed?bg=rgba%28239%2C40%2C44%2C1%29&t=base16-dark&wt=sharp&l=auto&width=990&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=143%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522chip%2520text-chip%2522%253E%250A%2509%253Cspan%2520class%253D%2522chip-text%2520margin-r%2522%253EJohn%2520Doe%253C%252Fspan%253E%2520%250A%2520%2509%253Cspan%2520class%253D%2522chip-close%2520text-bold%2522%2520onclick%253D%2522this.parentElement.style.display%253D%27none%27%2522%253E%2526times%253B%253C%252Fspan%253E%250A%253C%252Fdiv%253E%250A%250A"
+                                style=" border:0; transform: scale(1); overflow:hidden;"
+                                sandbox="allow-scripts allow-same-origin">
+                            </iframe>
+                        </code>
+                    </section>
+                </div>
+                <div class="component-item-container">
+                    <h3>Chip with icon</h3>
+                    <p class="text-2xl">This is the version of chip which contains icon on left side and close button on right side</p>
+                    <section class="sample-container flex">
+                        <div class="chip icon-chip">
+                            <img class="chip-picture margin-r" src="../components/assets/images/avatar.png" alt="picture">
+                            <span class="chip-text margin-r">John Doe</span> 
+                            <span class="chip-close margin-r text-bold" onclick="this.parentElement.style.display='none'">&times;</span>
+                        </div>
+                    </section>
+                     <section class="code-section">
+                        <code>
+                            <iframe
+                                src="https://carbon.now.sh/embed?bg=rgba%28239%2C40%2C44%2C1%29&t=base16-dark&wt=sharp&l=auto&width=990&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=143%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522chip%2520icon-chip%2522%253E%250A%2509%253Cimg%2520class%253D%2522chip-picture%2520margin-r%2522%2520src%253D%2522..%252Fassets%252Fimages%252Favatar.png%2522%2520alt%253D%2522picture%2522%253E%250A%2509%253Cspan%2520class%253D%2522chip-text%2520margin-r%2522%253EJohn%2520Doe%253C%252Fspan%253E%2520%250A%2509%253Cspan%2520class%253D%2522chip-close%2520margin-r%2520text-bold%2522%2520onclick%253D%2522this.parentElement.style.display%253D%27none%27%2522%253E%2526times%253B%253C%252Fspan%253E%250A%253C%252Fdiv%253E"
+                                style=" border:0; transform: scale(1); overflow:hidden;"
+                                sandbox="allow-scripts allow-same-origin">
+                            </iframe>
+                        </code>
+                    </section>
+                </div>
+            </div>
+            <hr>
+            <div class="component-container" id="snackbar">
+                <h1 class="text-underline">Snackbar</h1>
+                <p class="text-3xl">Snackbar is the one which tells user about what action happened or what action will be performed</p>
+                <div class="component-item-container">
+                    <h3>Basic Snackbar</h3>
+                    <p class="text-2xl">This is the one which is normally used in websites to give information about the action, this is used in two forms 1.Baseline snackbar where it is displayed at the bottom of the screen 2.Leading snackbar where it is displayed at the left corner of the screen</p>
+                    <section class="sample-container flex">
+                        <div class="snackbar-content">
+                            <p>This is to test Snackbar Working</p>
+                            <button class="snackbar-button text-bold">RETRY</button>
+                            <span class="close" onclick="this.parentElement.style.display='none'">&times;</span>
+                        </div>
+                    </section>
+                     <section class="code-section">
+                        <code>
+                            <iframe
+                                src="https://carbon.now.sh/embed?bg=rgba%28239%2C40%2C44%2C1%29&t=base16-dark&wt=sharp&l=auto&width=990&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=143%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522snackbar-content%2522%253E%250A%2509%253Cp%253EThis%2520is%2520to%2520test%2520Snackbar%2520Working%253C%252Fp%253E%250A%2509%253Cbutton%2520class%253D%2522snackbar-button%2520text-bold%2522%253ERETRY%253C%252Fbutton%253E%250A%2509%253Cspan%2520class%253D%2522close%2522%2520onclick%253D%2522this.parentElement.style.display%253D%27none%27%2522%253E%2526times%253B%253C%252Fspan%253E%250A%253C%252Fdiv%253E"
+                                style=" border:0; transform: scale(1); overflow:hidden;"
+                                sandbox="allow-scripts allow-same-origin">
+                            </iframe>
+                        </code>
+                    </section>
+                </div>
+                <div class="component-item-container">
+                    <h3>Stacked Snackbar</h3>
+                    <p class="text-2xl">This is the version of snackbar where information is stacked one above the other</p>
+                    <section class="sample-container flex">
+                        <div class="snackbar-content-stacked">
+                            <p>This is to test Snackbar Working, It contains Button</p>
+                            <section class="actions margin-b">
+                                <button class="snackbar-button text-bold">ADD A NEW LABEL</button>
+                                <span class="close">&times;</span>
+                            </section>
+                        </div>
+                    </section>
+                     <section class="code-section">
+                        <code>
+                            <iframe
+                                src="https://carbon.now.sh/embed?bg=rgba%28239%2C40%2C44%2C1%29&t=base16-dark&wt=sharp&l=auto&width=990&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=143%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522snackbar-content-stacked%2522%253E%250A%2509%253Cp%253EThis%2520is%2520to%2520test%2520Snackbar%2520Working%252C%2520It%2520contains%2520Button%253C%252Fp%253E%250A%2509%253Csection%2520class%253D%2522actions%2520margin-b%2522%253E%250A%2509%2509%253Cbutton%2520class%253D%2522snackbar-button%2520text-bold%2522%253EADD%2520A%2520NEW%2520LABEL%253C%252Fbutton%253E%250A%2509%2509%253Cspan%2520class%253D%2522close%2522%253E%2526times%253B%253C%252Fspan%253E%250A%2509%253C%252Fsection%253E%250A%253C%252Fdiv%253E"
                                 style=" border:0; transform: scale(1); overflow:hidden;"
                                 sandbox="allow-scripts allow-same-origin">
                             </iframe>
