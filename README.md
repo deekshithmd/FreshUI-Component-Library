@@ -88,3 +88,5 @@
  There are 2 types of snackbar available in this library
  * Basic snackbar
  * Stacked snackbar
+
+ ![Component Library](https://github.com/deekshithmd/FreshUI-Component-Library/blob/navigation-chips-snackbar/components/assets/images/ComponetLibrary.gif)
