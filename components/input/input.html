@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../style.css">
+    <title>Input</title>
+</head>
+<body>
+    <h1>Simple inputs</h1>
+    <input class="input outlined" type="text" placeholder="Enter your input">
+    <input class="input standard" type="text" placeholder="Enter your input">
+    <h1>Labeled</h1>
+    <div class="input input-labeled outlined">
+        <label for="username">Username</label>
+        <input type="text" name="username" placeholder="Enter Username">
+    </div>
+    <div class="input input-labeled standard">
+        <label for="username">Username</label>
+        <input type="text" name="username" placeholder="Enter Username">
+    </div>
+    <h1>Search input</h1>
+    <div class="input search-field outlined ">
+        <input type="text" name="username" placeholder="Search here...">
+        <button class="search-icon"><i class="fa fa-search"></i></button>
+    </div>
+    <h1>form input</h1>
+    <div class="input">
+        <div class="input-field outlined">
+            <button class="input-icon"><i class="far fa-envelope"></i></button>
+            <input type="email" placeholder="Enter Email Address" required>
+        </div>    
+        <div class="form-input-message">
+            <span class="input-validation error-msg">
+                <span class="message-icon"><i class="fa fa-exclamation-circle"></i></span>
+                Please Enter Email in correct format
+            </span>
+            <span class="input-validation success-msg">
+                <span class="message-icon"><i class="fa fa-check-circle"></i></span>
+                Success
+            </span>
+        </div>
+    </div>
+    <div class="text-area-container">
+        <textarea cols="30" rows="10"></textarea>
+        <button class="btn btn-icon-text-primary-outline btn-send"><i class="fa fa-paper-plane btn-icon margin-r"></i>Send</button>
+    </div>
+</body>
+</html>

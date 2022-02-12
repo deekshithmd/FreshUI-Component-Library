@@ -1,0 +1,113 @@
+input{
+    outline: none;
+    border: none;
+    background: transparent;
+    font-size: 1.5rem;
+}
+
+.input-labeled{
+    position: relative;
+    font-size: 1.5rem;
+    padding: 7px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.input-labeled>label{
+    position: absolute;
+    top: -10px;
+    background: var(--background-color);
+    padding: 0 2px;
+}
+
+.outlined{
+    border: 2px solid var(--primary-color);
+    padding: 10px;
+    border-radius: 5px;
+    width: 25rem;
+}
+
+.standard{
+    border-bottom: 2px solid var(--primary-color);
+    padding: 7px;
+    border-radius: 0%;
+    padding-left: 0;
+    width: 25rem;
+}
+
+.search-field{
+    width: 25rem;
+    padding: 5px;
+    margin: 0;
+    border-radius: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.search-icon{
+    border: none;
+    background: transparent;
+    font-size: 1.8rem;
+    vertical-align: middle;
+}
+
+.input-field{
+    padding:2px;
+    display: flex;
+    align-items: center;
+}
+
+.input-icon{
+    border: none;
+    background: transparent;
+    font-size: 2.5rem;
+    vertical-align: middle;
+    width: 4rem;
+    height: auto;
+    background-color: var(--primary-color);
+    padding: 2px;
+    color: var(--secondary-text-color);
+    border-radius: 3px;
+}
+
+.input-validation{
+    font-size: 1.2rem;
+    padding: 5px;
+}
+
+.error-msg{
+    color: var(--danger-text-color);
+}
+
+.success-msg{
+    color: var(--success-text-color);
+}
+
+.message-icon{
+    padding-right: 5px;
+}
+
+.text-area-container{
+    height: 5rem;
+    width: 40rem;
+    padding:5px;
+    background-color: var(--primary-color);
+    border-radius: 5px;
+    position: relative;
+}
+
+textarea{
+    resize: none;
+    height: 100%;
+    width: 75%;
+    outline: none;
+    border-radius: 5px;
+    font-size: 1.5rem;
+    padding: 10px;
+    overflow-y: hidden;
+}
+
+.btn-send{
+    position: absolute;
+    right: 5px;
+}
