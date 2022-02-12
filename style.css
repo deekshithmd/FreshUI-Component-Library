@@ -12,6 +12,9 @@
 @import url(components/typography/typography.css);
 @import url(components/utility/utility.css);
 @import url(components/color/color.css);
+@import url(components/navigation/navigation.css);
+@import url(components/chips/chip.css);
+@import url(components/snackbar/snackbar.css);
 @import url(docsite/doc.css);
 @import url(index.css);
 
