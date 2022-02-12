@@ -72,7 +72,7 @@ input{
 
 .input-validation{
     font-size: 1.2rem;
-    padding: 0.5rem;
+    padding: 5px;
 }
 
 .error-msg{
@@ -84,7 +84,7 @@ input{
 }
 
 .message-icon{
-    padding-right: 0.5rem;
+    padding-right: 5px;
 }
 
 .text-area-container{
