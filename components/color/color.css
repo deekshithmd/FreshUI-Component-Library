@@ -34,4 +34,8 @@
     --background-black: #2b2a2a;
 
     --snackbar-text-color:#7da7f7;
+    --grey-color-text: #808080;
+
+    --black-background: #000000;
+    --modal-background: rgb(0, 0, 0,0.3);
 }
