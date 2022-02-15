@@ -27,7 +27,7 @@
  * [Typography](#typography)
  * [Rating](#rating)
  * [Modal](#modal)
- * [Simplified Grid](#simplified grid)
+ * [Simplified-Grid](#simplified-grid)
  * [List](#list)
  
  ## Alert
