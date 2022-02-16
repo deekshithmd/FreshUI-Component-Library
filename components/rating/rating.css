@@ -1,3 +1,12 @@
+.rating i{
+    color: var(--primary-color);
+    font-size: 1.5rem;
+}
+
+.rating i:hover{
+    cursor: pointer;
+}
+
 .rating .fas{
     color:var(--secondary-color);
 }
