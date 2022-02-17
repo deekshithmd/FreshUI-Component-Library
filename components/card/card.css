@@ -36,6 +36,10 @@
     padding: 5px;
 }
 
+.vertical-img{
+    max-height: 18rem;
+}
+
 .card-img img{
     width: 100%;
     height: 100%;
