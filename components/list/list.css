@@ -59,4 +59,5 @@
     border: 1px solid var(--border-black);
     font-size: 1.5rem;
     width: 100%;
+    margin:2px 0;
 }

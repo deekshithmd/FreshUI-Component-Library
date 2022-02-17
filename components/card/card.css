@@ -45,6 +45,11 @@
     height: 100%;
 }
 
+.horizontal-img img{
+    max-height: 18rem;
+}
+
+
 .card-details{
     display: flex;
     flex-direction: column;
