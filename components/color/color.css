@@ -4,6 +4,8 @@
 
     --primary-text-color: #272626;
     --secondary-text-color: #ffffff;
+    --snackbar-text-color:#7da7f7;
+    --grey-color-text: #808080;
 
     --background-color: #eeeeee;
 
@@ -33,9 +35,7 @@
     --light-black-background:#4e4e4e;
     --background-black: #2b2a2a;
 
-    --snackbar-text-color:#7da7f7;
-    --grey-color-text: #808080;
-
     --black-background: #000000;
     --modal-background: rgb(0, 0, 0,0.3);
+    --white-background: #ffffff;
 }

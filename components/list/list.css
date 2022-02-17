@@ -1,0 +1,63 @@
+.bullet-style{
+    font-size: 1.5rem;
+    list-style: disc;
+}
+
+.square-style{
+    font-size: 1.5rem;
+    list-style:square;
+}
+
+.circle-style{
+    font-size: 1.5rem;
+    list-style:circle;
+}
+
+.number-style{
+    font-size: 1.5rem;
+    list-style: decimal;
+}
+
+.capital-letter-style{
+    font-size: 1.5rem;
+    list-style: upper-alpha;
+}
+
+.small-letter-style{
+    font-size: 1.5rem;
+    list-style: lower-alpha;
+}
+
+.bigger-roman-style{
+    font-size: 1.5rem;
+    list-style: upper-roman;
+}
+
+.lower-roman-style{
+    font-size: 1.5rem;
+    list-style: lower-roman;
+}
+
+.input-lists{
+    font-size: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+}
+
+.stacked-container{
+    background-color: var(--white-background);
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+}
+
+.stacked-container li{
+    padding: 1rem;
+    background-color: var(--success-background);
+    border: 1px solid var(--border-black);
+    font-size: 1.5rem;
+    width: 100%;
+    margin:2px 0;
+}
