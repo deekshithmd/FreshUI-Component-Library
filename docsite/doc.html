@@ -49,7 +49,7 @@
         <!-- End of Navigation -->
    
         <aside class="sidebar"> 
-            <ul class="component-list">
+            <ul class="component-list list-style-none">
                 <h2 class="subtitle-1 text-underline">Components</h2>
                 <li class="component-item text-md"><a href="#alert" class="link-style-none">Alert</a></li>
                 <li class="component-item text-md"><a href="#avatar" class="link-style-none">Avatar</a></li>
@@ -64,6 +64,8 @@
                 <li class="component-item text-md"><a href="#typography" class="link-style-none">Typography</a></li>
                 <li class="component-item text-md"><a href="#rating" class="link-style-none">Rating</a></li>
                 <li class="component-item text-md"><a href="#modal" class="link-style-none">Modal</a></li>
+                <li class="component-item text-md"><a href="#grid" class="link-style-none">Simplified Grid</a></li>
+                <li class="component-item text-md"><a href="#list" class="link-style-none">Lists</a></li>
             </ul>
         </aside>
         <div class="main">
@@ -202,7 +204,7 @@
                     <h3>Round Image Avatars</h3>
                     <p class="text-md">These are different sized round shaped image avatars, different sizes of avatars large(sm), medium(md), small(sm) and extra-small(xs) sizes</p>
                     <section class="sample-container flex">
-                        <div class="avatar avatar-sm">
+                        <div class="avatar avatar-lg">
                             <img class="img-responsive img-round" src="../components/assets/images/avatar.png" alt="Avatar">
                         </div>
                         <div class="avatar avatar-md">
@@ -218,7 +220,7 @@
                     <section class="code-section">
                         <code>
                             <iframe
-                                src="https://carbon.now.sh/embed?bg=rgba%28239%2C40%2C44%2C1%29&t=base16-dark&wt=sharp&l=auto&width=990&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=143%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522avatar%2520avatar-sm%2522%253E%250A%2509%253Cimg%2520class%253D%2522img-responsive%2520img-round%2522%2520src%253D%2522..%252Fcomponents%252Fassets%252Fimages%252Favatar.png%2522%2520alt%253D%2522Avatar%2522%253E%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522avatar%2520avatar-md%2522%253E%250A%2509%253Cimg%2520class%253D%2522img-responsive%2520img-round%2522%2520src%253D%2522..%252Fcomponents%252Fassets%252Fimages%252Favatar.png%2522%2520alt%253D%2522Avatar%2522%253E%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522avatar%2520avatar-sm%2522%253E%250A%2509%253Cimg%2520class%253D%2522img-responsive%2520img-round%2522%2520src%253D%2522..%252Fcomponents%252Fassets%252Fimages%252Favatar.png%2522%2520alt%253D%2522Avatar%2522%253E%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522avatar%2520avatar-xs%2522%253E%250A%2509%253Cimg%2520class%253D%2522img-responsive%2520img-round%2522%2520src%253D%2522..%252Fcomponents%252Fassets%252Fimages%252Favatar.png%2522%2520alt%253D%2522Avatar%2522%253E%250A%253C%252Fdiv%253E"
+                                src="https://carbon.now.sh/embed?bg=rgba%28239%2C40%2C44%2C1%29&t=base16-dark&wt=sharp&l=auto&width=990&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=143%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522avatar%2520avatar-lg%2522%253E%250A%2509%253Cimg%2520class%253D%2522img-responsive%2520img-round%2522%2520src%253D%2522..%252Fcomponents%252Fassets%252Fimages%252Favatar.png%2522%2520alt%253D%2522Avatar%2522%253E%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522avatar%2520avatar-md%2522%253E%250A%2509%253Cimg%2520class%253D%2522img-responsive%2520img-round%2522%2520src%253D%2522..%252Fcomponents%252Fassets%252Fimages%252Favatar.png%2522%2520alt%253D%2522Avatar%2522%253E%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522avatar%2520avatar-sm%2522%253E%250A%2509%253Cimg%2520class%253D%2522img-responsive%2520img-round%2522%2520src%253D%2522..%252Fcomponents%252Fassets%252Fimages%252Favatar.png%2522%2520alt%253D%2522Avatar%2522%253E%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522avatar%2520avatar-xs%2522%253E%250A%2509%253Cimg%2520class%253D%2522img-responsive%2520img-round%2522%2520src%253D%2522..%252Fcomponents%252Fassets%252Fimages%252Favatar.png%2522%2520alt%253D%2522Avatar%2522%253E%250A%253C%252Fdiv%253E"
                                 style=" border:0; transform: scale(1); overflow:hidden;"
                                 sandbox="allow-scripts allow-same-origin">
                             </iframe>
@@ -229,7 +231,7 @@
                     <h3>Round Text Avatars</h3>
                     <p class="text-md">These are different sized round shaped text avatars, different sizes of avatars large(sm), medium(md), small(sm) and extra-small(xs) sizes</p>
                     <section class="sample-container flex">
-                        <div class="avatar avatar-text-sm avatar-text img-round" role="img" alt="Avatar">AB</div>
+                        <div class="avatar avatar-text-lg avatar-text img-round" role="img" alt="Avatar">AB</div>
                         <div class="avatar avatar-text-md avatar-text img-round" role="img" alt="Avatar">AB</div>
                         <div class="avatar avatar-text-sm avatar-text img-round" role="img" alt="Avatar">AB</div>
                         <div class="avatar avatar-text-xs avatar-text img-round" role="img" alt="Avatar">AB</div>
@@ -237,7 +239,7 @@
                     <section class="code-section">
                         <code>
                             <iframe
-                                src="https://carbon.now.sh/embed?bg=rgba%28239%2C40%2C44%2C1%29&t=base16-dark&wt=sharp&l=auto&width=990&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=143%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522avatar%2520avatar-text-sm%2520avatar-text%2520img-round%2522%2520role%253D%2522img%2522%2520alt%253D%2522Avatar%2522%253EAB%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522avatar%2520avatar-text-md%2520avatar-text%2520img-round%2522%2520role%253D%2522img%2522%2520alt%253D%2522Avatar%2522%253EAB%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522avatar%2520avatar-text-sm%2520avatar-text%2520img-round%2522%2520role%253D%2522img%2522%2520alt%253D%2522Avatar%2522%253EAB%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522avatar%2520avatar-text-xs%2520avatar-text%2520img-round%2522%2520role%253D%2522img%2522%2520alt%253D%2522Avatar%2522%253EAB%253C%252Fdiv%253E%250A"
+                                src="https://carbon.now.sh/embed?bg=rgba%28239%2C40%2C44%2C1%29&t=base16-dark&wt=sharp&l=auto&width=990&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=143%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522avatar%2520avatar-text-lg%2520avatar-text%2520img-round%2522%2520role%253D%2522img%2522%2520alt%253D%2522Avatar%2522%253EAB%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522avatar%2520avatar-text-md%2520avatar-text%2520img-round%2522%2520role%253D%2522img%2522%2520alt%253D%2522Avatar%2522%253EAB%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522avatar%2520avatar-text-sm%2520avatar-text%2520img-round%2522%2520role%253D%2522img%2522%2520alt%253D%2522Avatar%2522%253EAB%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522avatar%2520avatar-text-xs%2520avatar-text%2520img-round%2522%2520role%253D%2522img%2522%2520alt%253D%2522Avatar%2522%253EAB%253C%252Fdiv%253E%250A%250A"
                                 style=" border:0; transform: scale(1); overflow:hidden;"
                                 sandbox="allow-scripts allow-same-origin">
                             </iframe>
@@ -248,7 +250,7 @@
                     <h3>Square Image Avatars</h3>
                     <p class="text-md">These are different sized square shaped image avatars, different sizes of avatars large(sm), medium(md), small(sm) and extra-small(xs) sizes</p>
                     <section class="sample-container flex">
-                        <div class="avatar avatar-sm">
+                        <div class="avatar avatar-lg">
                             <img class="img-responsive img-square" src="../components/assets/images/avatar.png" alt="Avatar">
                         </div>
                         <div class="avatar avatar-md">
@@ -264,7 +266,7 @@
                     <section class="code-section">
                         <code>
                             <iframe
-                                src="https://carbon.now.sh/embed?bg=rgba%28239%2C40%2C44%2C1%29&t=base16-dark&wt=sharp&l=auto&width=990&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=143%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522avatar%2520avatar-sm%2522%253E%250A%2509%253Cimg%2520class%253D%2522img-responsive%2520img-square%2522%2520src%253D%2522..%252Fcomponents%252Fassets%252Fimages%252Favatar.png%2522%2520alt%253D%2522Avatar%2522%253E%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522avatar%2520avatar-md%2522%253E%250A%2509%253Cimg%2520class%253D%2522img-responsive%2520img-square%2522%2520src%253D%2522..%252Fcomponents%252Fassets%252Fimages%252Favatar.png%2522%2520alt%253D%2522Avatar%2522%253E%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522avatar%2520avatar-sm%2522%253E%250A%2509%253Cimg%2520class%253D%2522img-responsive%2520img-square%2522%2520src%253D%2522..%252Fcomponents%252Fassets%252Fimages%252Favatar.png%2522%2520alt%253D%2522Avatar%2522%253E%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522avatar%2520avatar-xs%2522%253E%250A%2509%253Cimg%2520class%253D%2522img-responsive%2520img-square%2522%2520src%253D%2522..%252Fcomponents%252Fassets%252Fimages%252Favatar.png%2522%2520alt%253D%2522Avatar%2522%253E%250A%253C%252Fdiv%253E"
+                                src="https://carbon.now.sh/embed?bg=rgba%28239%2C40%2C44%2C1%29&t=base16-dark&wt=sharp&l=auto&width=990&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=143%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522avatar%2520avatar-lg%2522%253E%250A%2509%253Cimg%2520class%253D%2522img-responsive%2520img-square%2522%2520src%253D%2522..%252Fcomponents%252Fassets%252Fimages%252Favatar.png%2522%2520alt%253D%2522Avatar%2522%253E%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522avatar%2520avatar-md%2522%253E%250A%2509%253Cimg%2520class%253D%2522img-responsive%2520img-square%2522%2520src%253D%2522..%252Fcomponents%252Fassets%252Fimages%252Favatar.png%2522%2520alt%253D%2522Avatar%2522%253E%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522avatar%2520avatar-sm%2522%253E%250A%2509%253Cimg%2520class%253D%2522img-responsive%2520img-square%2522%2520src%253D%2522..%252Fcomponents%252Fassets%252Fimages%252Favatar.png%2522%2520alt%253D%2522Avatar%2522%253E%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522avatar%2520avatar-xs%2522%253E%250A%2509%253Cimg%2520class%253D%2522img-responsive%2520img-square%2522%2520src%253D%2522..%252Fcomponents%252Fassets%252Fimages%252Favatar.png%2522%2520alt%253D%2522Avatar%2522%253E%250A%253C%252Fdiv%253E"
                                 style=" border:0; transform: scale(1); overflow:hidden;"
                                 sandbox="allow-scripts allow-same-origin">
                             </iframe>
@@ -275,7 +277,7 @@
                     <h3>Square Text Avatars</h3>
                     <p class="text-md">These are different sized square shaped text avatars, different sizes of avatars large(sm), medium(md), small(sm) and extra-small(xs) sizes</p>
                     <section class="sample-container flex">
-                        <div class="avatar avatar-text-sm avatar-text img-square" role="img" alt="Avatar">AB</div>
+                        <div class="avatar avatar-text-lg avatar-text img-square" role="img" alt="Avatar">AB</div>
                         <div class="avatar avatar-text-md avatar-text img-square" role="img" alt="Avatar">AB</div>
                         <div class="avatar avatar-text-sm avatar-text img-square" role="img" alt="Avatar">AB</div>
                         <div class="avatar avatar-text-xs avatar-text img-square" role="img" alt="Avatar">AB</div>
@@ -283,7 +285,7 @@
                     <section class="code-section">
                         <code>
                             <iframe
-                                src="https://carbon.now.sh/embed?bg=rgba%28239%2C40%2C44%2C1%29&t=base16-dark&wt=sharp&l=auto&width=990&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=143%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522avatar%2520avatar-text-sm%2520avatar-text%2520img-square%2522%2520role%253D%2522img%2522%2520alt%253D%2522Avatar%2522%253EAB%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522avatar%2520avatar-text-md%2520avatar-text%2520img-square%2522%2520role%253D%2522img%2522%2520alt%253D%2522Avatar%2522%253EAB%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522avatar%2520avatar-text-sm%2520avatar-text%2520img-square%2522%2520role%253D%2522img%2522%2520alt%253D%2522Avatar%2522%253EAB%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522avatar%2520avatar-text-xs%2520avatar-text%2520img-square%2522%2520role%253D%2522img%2522%2520alt%253D%2522Avatar%2522%253EAB%253C%252Fdiv%253E%250A%250A"
+                                src="https://carbon.now.sh/embed?bg=rgba%28239%2C40%2C44%2C1%29&t=base16-dark&wt=sharp&l=auto&width=990&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=143%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522avatar%2520avatar-text-lg%2520avatar-text%2520img-square%2522%2520role%253D%2522img%2522%2520alt%253D%2522Avatar%2522%253EAB%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522avatar%2520avatar-text-md%2520avatar-text%2520img-square%2522%2520role%253D%2522img%2522%2520alt%253D%2522Avatar%2522%253EAB%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522avatar%2520avatar-text-sm%2520avatar-text%2520img-square%2522%2520role%253D%2522img%2522%2520alt%253D%2522Avatar%2522%253EAB%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522avatar%2520avatar-text-xs%2520avatar-text%2520img-square%2522%2520role%253D%2522img%2522%2520alt%253D%2522Avatar%2522%253EAB%253C%252Fdiv%253E"
                                 style=" border:0; transform: scale(1); overflow:hidden;"
                                 sandbox="allow-scripts allow-same-origin">
                             </iframe>
@@ -299,7 +301,7 @@
                     <h3>Badge on Avatars</h3>
                     <p class="text-md">These are the different types of badges on different sized avatars, They  are categorized as available(green), busy(red) and not avilable(orange)</p>
                     <section class="sample-container flex">
-                        <div class="avatar avatar-sm">
+                        <div class="avatar avatar-lg">
                             <img class="img-responsive img-round" src="../components/assets/images/avatar.png" alt="Avatar">
                             <span class="status-badge-avatar badge-status-busy"></span>
                         </div>
@@ -319,8 +321,8 @@
                     <section class="code-section">
                         <code>
                             <iframe
-                                src="https://carbon.now.sh/embed?bg=rgba%28239%2C40%2C44%2C1%29&t=base16-dark&wt=sharp&l=auto&width=990&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=143%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522avatar%2520avatar-sm%2522%253E%250A%2509%253Cimg%2520class%253D%2522img-responsive%2520img-round%2522%2520src%253D%2522..%252Fcomponents%252Fassets%252Fimages%252Favatar.png%2522%2520alt%253D%2522Avatar%2522%253E%250A%2509%253Cspan%2520class%253D%2522status-badge-avatar%2520badge-status-busy%2522%253E%253C%252Fspan%253E%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522avatar%2520avatar-md%2522%253E%250A%2509%253Cimg%2520class%253D%2522img-responsive%2520img-round%2522%2520src%253D%2522..%252Fcomponents%252Fassets%252Fimages%252Favatar.png%2522%2520alt%253D%2522Avatar%2522%253E%250A%2509%253Cspan%2520class%253D%2522status-badge-avatar%2520badge-status-available%2522%253E%253C%252Fspan%253E%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522avatar%2520avatar-sm%2522%253E%250A%2509%253Cimg%2520class%253D%2522img-responsive%2520img-round%2522%2520src%253D%2522..%252Fcomponents%252Fassets%252Fimages%252Favatar.png%2522%2520alt%253D%2522Avatar%2522%253E%250A%2509%253Cspan%2520class%253D%2522status-badge-avatar%2520badge-status-away%2522%253E%253C%252Fspan%253E%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522avatar%2520avatar-xs%2522%253E%250A%2509%253Cimg%2520class%253D%2522img-responsive%2520img-round%2522%2520src%253D%2522..%252Fcomponents%252Fassets%252Fimages%252Favatar.png%2522%2520alt%253D%2522Avatar%2522%253E%250A%2509%253Cspan%2520class%253D%2522status-badge-avatar%2520badge-status-busy%2522%253E%253C%252Fspan%253E%250A%253C%252Fdiv%253E"
-                                style=" border:0; transform: scale(1); overflow:hidden;"
+                                src="https://carbon.now.sh/embed?bg=rgba%28239%2C40%2C44%2C1%29&t=base16-dark&wt=sharp&l=auto&width=680&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=143%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522avatar%2520avatar-lg%2522%253E%250A%2509%253Cimg%2520class%253D%2522img-responsive%2520img-round%2522%2520src%253D%2522..%252Fcomponents%252Fassets%252Fimages%252Favatar.png%2522%2520alt%253D%2522Avatar%2522%253E%250A%2509%253Cspan%2520class%253D%2522status-badge-avatar%2520badge-status-busy%2522%253E%253C%252Fspan%253E%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522avatar%2520avatar-md%2522%253E%250A%2509%253Cimg%2520class%253D%2522img-responsive%2520img-round%2522%2520src%253D%2522..%252Fcomponents%252Fassets%252Fimages%252Favatar.png%2522%2520alt%253D%2522Avatar%2522%253E%250A%2509%253Cspan%2520class%253D%2522status-badge-avatar%2520badge-status-available%2522%253E%253C%252Fspan%253E%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522avatar%2520avatar-sm%2522%253E%250A%2509%253Cimg%2520class%253D%2522img-responsive%2520img-round%2522%2520src%253D%2522..%252Fcomponents%252Fassets%252Fimages%252Favatar.png%2522%2520alt%253D%2522Avatar%2522%253E%250A%2509%253Cspan%2520class%253D%2522status-badge-avatar%2520badge-status-away%2522%253E%253C%252Fspan%253E%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522avatar%2520avatar-xs%2522%253E%250A%2509%253Cimg%2520class%253D%2522img-responsive%2520img-round%2522%2520src%253D%2522..%252Fcomponents%252Fassets%252Fimages%252Favatar.png%2522%2520alt%253D%2522Avatar%2522%253E%250A%2509%253Cspan%2520class%253D%2522status-badge-avatar%2520badge-status-busy%2522%253E%253C%252Fspan%253E%250A%253C%252Fdiv%253E%253Cdiv%2520class%253D%2522avatar%2520avatar-md%2522%253E%250A%2509%253Cimg%2520class%253D%2522img-responsive%2520img-round%2522%2520src%253D%2522..%252Fcomponents%252Fassets%252Fimages%252Favatar.png%2522%2520alt%253D%2522Avatar%2522%253E%250A%2509%253Cspan%2520class%253D%2522status-badge-avatar%2520badge-status-busy%2522%253E%253C%252Fspan%253E%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522avatar%2520avatar-md%2522%253E%250A%2509%253Cimg%2520class%253D%2522img-responsive%2520img-round%2522%2520src%253D%2522..%252Fcomponents%252Fassets%252Fimages%252Favatar.png%2522%2520alt%253D%2522Avatar%2522%253E%250A%2509%253Cspan%2520class%253D%2522status-badge-avatar%2520badge-status-available%2522%253E%253C%252Fspan%253E%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522avatar%2520avatar-sm%2522%253E%250A%2509%253Cimg%2520class%253D%2522img-responsive%2520img-round%2522%2520src%253D%2522..%252Fcomponents%252Fassets%252Fimages%252Favatar.png%2522%2520alt%253D%2522Avatar%2522%253E%250A%2509%253Cspan%2520class%253D%2522status-badge-avatar%2520badge-status-away%2522%253E%253C%252Fspan%253E%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522avatar%2520avatar-xs%2522%253E%250A%2509%253Cimg%2520class%253D%2522img-responsive%2520img-round%2522%2520src%253D%2522..%252Fcomponents%252Fassets%252Fimages%252Favatar.png%2522%2520alt%253D%2522Avatar%2522%253E%250A%2509%253Cspan%2520class%253D%2522status-badge-avatar%2520badge-status-busy%2522%253E%253C%252Fspan%253E%250A%253C%252Fdiv%253E"
+                                style="border:0; transform: scale(1); overflow:hidden;"
                                 sandbox="allow-scripts allow-same-origin">
                             </iframe>
                         </code>
@@ -1172,7 +1174,7 @@
                 <h1 class="text-underline">Rating</h1>
                 <p class="text-lg">Rating is the one componet mainly used in ecommerce websites, to asses the quality</p>
                 <div class="component-item-container">
-                    <section class="sample-container">
+                    <section class="sample-container flex">
                         <div class="rating">
                             <i class="far fa-star fa-2x one"></i>
                             <i class="far fa-star fa-2x two"></i>
@@ -1243,6 +1245,192 @@
                                 style=" border:0; transform: scale(1); overflow:hidden;"
                                 sandbox="allow-scripts allow-same-origin">
                             </iframe>
+                        </code>
+                    </section>
+                </div>
+            </div>
+            <hr>
+            <div class="component-container" id="grid">
+                <h1 class="text-underline">Simplified Grid</h1>
+                <p class="text-lg">CSS grid layout is used to structure the content of page. We can structure the grid based on requirement, here in this library there are 7 types of grid classes</p>
+                <div class="component-item-container">
+                    <section class="sample-container">
+                        <div class="grid-col-2">
+                            <span class="col-1">1/2</span>
+                            <span class="col-2">1/2</span>
+                        </div>
+                    </section>
+                    <section class="sample-container">
+                        <div class="grid-col-3">
+                            <span class="col-1">1/3</span>
+                            <span class="col-2">1/3</span>
+                            <span class="col-3">1/3</span>
+                        </div>
+                    </section>
+                    <section class="sample-container">
+                        <div class="grid-col-4">
+                            <span class="col-1">1/4</span>
+                            <span class="col-2">1/4</span>
+                            <span class="col-3">1/4</span>
+                            <span class="col-4">1/4</span>
+                        </div>
+                    </section>
+                    <section class="sample-container">
+                        <div class="grid-col-7-3">
+                            <span class="col-1">70%</span>
+                            <span class="col-2">30%</span>
+                        </div>
+                    </section>
+                    <section class="sample-container">
+                        <div class="grid-col-3-7">
+                            <span class="col-1">30%</span>
+                            <span class="col-2">70%</span>
+                        </div>
+                    </section>
+                    <section class="sample-container">
+                        <div class="grid-row-2">
+                            <span class="row-1">1/2</span>
+                            <span class="row-2">1/2</span>
+                        </div>
+                    </section>
+                    <section class="sample-container">
+                        <div class="grid-row-3">
+                            <span class="row-1">1/3</span>
+                            <span class="row-2">1/3</span>
+                            <span class="row-3">1/3</span>
+                        </div>
+                    </section>
+                    <section class="code-section">
+                        <code>
+                            <iframe
+                                src="https://carbon.now.sh/embed?bg=rgba%28239%2C40%2C44%2C1%29&t=base16-dark&wt=sharp&l=auto&width=990&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=143%25&si=false&es=2x&wm=false&code=%253C%21--2%2520column%2520grid--%253E%250A%253Cdiv%2520class%253D%2522grid-col-2%2522%253E%250A%2509%253Cspan%2520class%253D%2522col-1%2522%253E1%252F2%253C%252Fspan%253E%250A%2509%253Cspan%2520class%253D%2522col-2%2522%253E1%252F2%253C%252Fspan%253E%250A%253C%252Fdiv%253E%250A%253C%21--3%2520column%2520grid--%253E%250A%253Cdiv%2520class%253D%2522grid-col-3%2522%253E%250A%2509%253Cspan%2520class%253D%2522col-1%2522%253E1%252F3%253C%252Fspan%253E%250A%2509%253Cspan%2520class%253D%2522col-2%2522%253E1%252F3%253C%252Fspan%253E%250A%2509%253Cspan%2520class%253D%2522col-3%2522%253E1%252F3%253C%252Fspan%253E%250A%253C%252Fdiv%253E%250A%253C%21--4%2520column%2520grid--%253E%250A%253Cdiv%2520class%253D%2522grid-col-4%2522%253E%250A%2509%253Cspan%2520class%253D%2522col-1%2522%253E1%252F4%253C%252Fspan%253E%250A%2509%253Cspan%2520class%253D%2522col-2%2522%253E1%252F4%253C%252Fspan%253E%250A%2509%253Cspan%2520class%253D%2522col-3%2522%253E1%252F4%253C%252Fspan%253E%250A%2509%253Cspan%2520class%253D%2522col-4%2522%253E1%252F4%253C%252Fspan%253E%250A%253C%252Fdiv%253E%250A%253C%21--70%253A30%2520column%2520grid--%253E%250A%253Cdiv%2520class%253D%2522grid-col-7-3%2522%253E%250A%2509%253Cspan%2520class%253D%2522col-1%2522%253E70%2525%253C%252Fspan%253E%250A%2509%253Cspan%2520class%253D%2522col-2%2522%253E30%2525%253C%252Fspan%253E%250A%253C%252Fdiv%253E%250A%253C%21--30%253A70%2520column%2520grid--%253E%250A%253Cdiv%2520class%253D%2522grid-col-3-7%2522%253E%250A%2509%253Cspan%2520class%253D%2522col-1%2522%253E30%2525%253C%252Fspan%253E%250A%2509%253Cspan%2520class%253D%2522col-2%2522%253E70%2525%253C%252Fspan%253E%250A%253C%252Fdiv%253E%250A%253C%21--2%2520row%2520grid--%253E%250A%253Cdiv%2520class%253D%2522grid-row-2%2522%253E%250A%2509%253Cspan%2520class%253D%2522row-1%2522%253E1%252F2%253C%252Fspan%253E%250A%2509%253Cspan%2520class%253D%2522row-2%2522%253E1%252F2%253C%252Fspan%253E%250A%253C%252Fdiv%253E%250A%253C%21--3%2520row%2520grid--%253E%250A%253Cdiv%2520class%253D%2522grid-row-3%2522%253E%250A%2509%253Cspan%2520class%253D%2522row-1%2522%253E1%252F3%253C%252Fspan%253E%250A%2509%253Cspan%2520class%253D%2522row-2%2522%253E1%252F3%253C%252Fspan%253E%250A%253C%252Fdiv%253E"
+                                style=" border:0; transform: scale(1); overflow:hidden;"
+                                sandbox="allow-scripts allow-same-origin">
+                            </iframe>
+                        </code>
+                    </section>
+                </div>
+            </div>
+            <hr>
+            <div class="component-container" id="list">
+                <h1 class="text-underline">Lists</h1>
+                <p class="text-lg">List is used to display items in different styles like bullet, square, disc, alphabet and number</p>
+                <div class="component-item-container">
+                    <h3>Unordered Lists</h3>
+                    <p class="text-md">These are the list styles where there is no order for listing, this category have bullet, disc, square as list styles</p>
+                    <section class="sample-container flex">
+                        <ul class="bullet-style">
+                            <li>Item-1</li>
+                            <li>Item-2</li>
+                            <li>Item-3</li>
+                        </ul>
+                        <ul class="square-style">
+                            <li>Item-1</li>
+                            <li>Item-2</li>
+                            <li>Item-3</li>
+                        </ul>
+                        <ul class="circle-style">
+                            <li>Item-1</li>
+                            <li>Item-2</li>
+                            <li>Item-3</li>
+                        </ul>
+                    </section>
+                    <section class="code-section">
+                        <code>
+                            <iframe
+                                src="https://carbon.now.sh/embed?bg=rgba%28239%2C40%2C44%2C1%29&t=base16-dark&wt=sharp&l=auto&width=990&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=143%25&si=false&es=2x&wm=false&code=%253C%21--Bullet%2520styled%2520list--%253E%250A%253Cul%2520class%253D%2522bullet-style%2522%253E%250A%2509%253Cli%253EItem-1%253C%252Fli%253E%250A%2509%253Cli%253EItem-2%253C%252Fli%253E%250A%2509%253Cli%253EItem-3%253C%252Fli%253E%250A%253C%252Ful%253E%250A%253C%21--Square%2520styled%2520list--%253E%250A%253Cul%2520class%253D%2522square-style%2522%253E%250A%2509%253Cli%253EItem-1%253C%252Fli%253E%250A%2509%253Cli%253EItem-2%253C%252Fli%253E%250A%2509%253Cli%253EItem-3%253C%252Fli%253E%250A%253C%252Ful%253E%250A%253C%21--Circle%2520styled%2520list--%253E%250A%253Cul%2520class%253D%2522circle-style%2522%253E%250A%2509%253Cli%253EItem-1%253C%252Fli%253E%250A%2509%253Cli%253EItem-2%253C%252Fli%253E%250A%2509%253Cli%253EItem-3%253C%252Fli%253E%250A%253C%252Ful%253E"
+                                style="border:0; transform: scale(1); overflow:hidden;"
+                                sandbox="allow-scripts allow-same-origin">
+                            </iframe>
+                        </code>
+                    </section>
+                </div>
+                <div class="component-item-container">
+                    <h3>Ordered Lists</h3>
+                    <p class="text-md">These are the list styles where order is used for listing, this category have numbers and alphabets as styles and it can also be reverse</p>
+                    <section class="sample-container flex">
+                        <ol class="number-style">
+                            <li>Item-1</li>
+                            <li>Item-2</li>
+                            <li>Item-3</li>
+                        </ol>
+                        <ol class="number-style" reversed>
+                            <li>Item-1</li>
+                            <li>Item-2</li>
+                            <li>Item-3</li>
+                        </ol>
+                        <ol class="capital-letter-style">
+                            <li>Item-1</li>
+                            <li>Item-2</li>
+                            <li>Item-3</li>
+                        </ol>
+                        <ol class="small-letter-style">
+                            <li>Item-1</li>
+                            <li>Item-2</li>
+                            <li>Item-3</li>
+                        </ol>
+                        <ol class="bigger-roman-style">
+                            <li>Item-1</li>
+                            <li>Item-2</li>
+                            <li>Item-3</li>
+                        </ol>
+                        <ol class="lower-roman-style">
+                            <li>Item-1</li>
+                            <li>Item-2</li>
+                            <li>Item-3</li>
+                        </ol>
+                    </section>
+                    <section class="code-section">
+                        <code>
+                            <iframe
+                                src="https://carbon.now.sh/embed?bg=rgba%28239%2C40%2C44%2C1%29&t=base16-dark&wt=sharp&l=auto&width=990&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=143%25&si=false&es=2x&wm=false&code=%253C%21--Number%2520styled%2520list--%253E%250A%253Col%2520class%253D%2522number-style%2522%253E%250A%2509%253Cli%253EItem-1%253C%252Fli%253E%250A%2509%253Cli%253EItem-2%253C%252Fli%253E%250A%2509%253Cli%253EItem-3%253C%252Fli%253E%250A%253C%252Fol%253E%250A%253C%21--Number%2520styled%2520list%2520Reversed--%253E%250A%253Col%2520class%253D%2522number-style%2522%2520reversed%253E%250A%2509%253Cli%253EItem-1%253C%252Fli%253E%250A%2509%253Cli%253EItem-2%253C%252Fli%253E%250A%2509%253Cli%253EItem-3%253C%252Fli%253E%250A%253C%252Fol%253E%250A%253C%21--Capital%2520letter%2520styled%2520list--%253E%250A%253Col%2520class%253D%2522capital-letter-style%2522%253E%250A%2509%253Cli%253EItem-1%253C%252Fli%253E%250A%2509%253Cli%253EItem-2%253C%252Fli%253E%250A%2509%253Cli%253EItem-3%253C%252Fli%253E%250A%253C%252Fol%253E%250A%253C%21--Small%2520letter%2520styled%2520list--%253E%250A%253Col%2520class%253D%2522small-letter-style%2522%253E%250A%2509%253Cli%253EItem-1%253C%252Fli%253E%250A%2509%253Cli%253EItem-2%253C%252Fli%253E%250A%2509%253Cli%253EItem-3%253C%252Fli%253E%250A%253C%252Fol%253E%250A%253C%21--Big%2520roman%2520number%2520styled%2520list--%253E%250A%253Col%2520class%253D%2522bigger-roman-style%2522%253E%250A%2509%253Cli%253EItem-1%253C%252Fli%253E%250A%2509%253Cli%253EItem-2%253C%252Fli%253E%250A%2509%253Cli%253EItem-3%253C%252Fli%253E%250A%253C%252Fol%253E%250A%253C%21--Small%2520roman%2520number%2520styled%2520list--%253E%250A%253Col%2520class%253D%2522lower-roman-style%2522%253E%250A%2509%253Cli%253EItem-1%253C%252Fli%253E%250A%2509%253Cli%253EItem-2%253C%252Fli%253E%250A%2509%253Cli%253EItem-3%253C%252Fli%253E%250A%253C%252Fol%253E"
+                                style=" border:0; transform: scale(1); overflow:hidden;"
+                                sandbox="allow-scripts allow-same-origin">
+                            </iframe>
+                        </code>
+                    </section>
+                </div>
+                <div class="component-item-container">
+                    <h3>Input list</h3>
+                    <p class="text-md">This is the one where input items displayed in list style</p>
+                    <section class="sample-container flex">
+                        <ul class="input-lists">
+                            <label for="input-1">
+                                <input type="checkbox" name="input-1" class="margin-r">Input-1
+                            </label>
+                            <label for="input-2">
+                                <input type="checkbox" name="input-2" class="margin-r">Input-2
+                            </label>
+                        </ul>
+                    </section>
+                    <section class="code-section">
+                        <code>
+                            <iframe
+                                src="https://carbon.now.sh/embed?bg=rgba%28239%2C40%2C44%2C1%29&t=base16-dark&wt=sharp&l=auto&width=990&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=143%25&si=false&es=2x&wm=false&code=%253Cul%2520class%253D%2522input-lists%2522%253E%250A%2509%253Clabel%2520for%253D%2522input-1%2522%253E%250A%2509%2509%253Cinput%2520type%253D%2522checkbox%2522%2520name%253D%2522input-1%2522%2520class%253D%2522margin-r%2522%253EInput-1%250A%2509%253C%252Flabel%253E%250A%2509%253Clabel%2520for%253D%2522input-2%2522%253E%250A%2509%2509%253Cinput%2520type%253D%2522checkbox%2522%2520name%253D%2522input-2%2522%2520class%253D%2522margin-r%2522%253EInput-2%250A%2509%253C%252Flabel%253E%250A%253C%252Ful%253E"
+                                style="border:0; transform: scale(1); overflow:hidden;"
+                                sandbox="allow-scripts allow-same-origin">
+                            </iframe>
+                        </code>
+                    </section>
+                </div>
+                <div class="component-item-container">
+                    <h3>Stacked list</h3>
+                    <p class="text-md">Normally this kind of list is used for notification display purposes, here lists are stacked one upon the other</p>
+                    <section class="sample-container">
+                        <ul class="list-style-none stacked-container">
+                            <li>Notification-1</li>
+                            <li>Notification-2</li>
+                            <li>Notification-3</li>
+                            <li>Notification-4</li>
+                        </ul>
+                    </section>
+                    <section class="code-section">
+                        <code>
+                            <iframe
+                            src="https://carbon.now.sh/embed?bg=rgba%28239%2C40%2C44%2C1%29&t=base16-dark&wt=sharp&l=auto&width=990&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=143%25&si=false&es=2x&wm=false&code=%253Cul%2520class%253D%2522list-style-none%2520stacked-container%2522%253E%250A%2509%253Cli%253ENotification-1%253C%252Fli%253E%250A%2509%253Cli%253ENotification-2%253C%252Fli%253E%250A%2509%253Cli%253ENotification-3%253C%252Fli%253E%250A%2509%253Cli%253ENotification-4%253C%252Fli%253E%250A%253C%252Ful%253E"
+                            style=" border:0; transform: scale(1); overflow:hidden;"
+                            sandbox="allow-scripts allow-same-origin">
+                          </iframe> 
                         </code>
                     </section>
                 </div>

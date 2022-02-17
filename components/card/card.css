@@ -36,10 +36,19 @@
     padding: 5px;
 }
 
+.vertical-img{
+    max-height: 18rem;
+}
+
 .card-img img{
     width: 100%;
     height: 100%;
 }
+
+.horizontal-img img{
+    max-height: 18rem;
+}
+
 
 .card-details{
     display: flex;
@@ -57,6 +66,10 @@
 
 .card-sub-heading{
     font-size: 1.5rem;
+    margin: 3px 0;
+}
+
+.rating{
     margin: 3px 0;
 }
 

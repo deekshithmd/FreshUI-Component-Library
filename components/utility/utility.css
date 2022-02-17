@@ -38,18 +38,14 @@ button:hover{
     cursor: pointer;
 }
 
-ul li{
-    list-style: none;
-}
-
 a{
     color: var(--primary-text-color);
 }
 
 hr{
     margin: 1rem auto;
-   border: 1px solid var(--border-black);
-   width: 100%;
+    border: 1px solid var(--border-black);
+    width: 100%;
 }
 
 .flex{
@@ -69,4 +65,20 @@ hr{
 
 .text-bold{
     font-weight: 600;
+}
+
+.icon-right{
+    position: absolute;
+    right: 15px;
+    margin: auto;
+}
+
+.icon-top-right{
+    position: absolute;
+    top: 5px;
+    right: 5px;
+}
+
+.icon-m{
+    font-size: 2rem;
 }
