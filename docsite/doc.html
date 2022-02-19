@@ -16,7 +16,10 @@
             <!-- Left Navigation Section -->
             <div class="nav-section">
                 <div class="logo">
-                    <a href="../index.html" >
+                    <section class="hamburger margin-r">
+                        <i class="fa fa-bars fa-2x" aria-hidden="true"></i>
+                    </section>
+                    <a href="../index.html" class="hide-icon">
                         <img src="../components/assets/brand-logo/logo.png" alt="logo">
                     </a>
                     <span class="brand-text">FRESHUI</span>
@@ -25,14 +28,14 @@
                     <li class="list-inline-item margin-l margin-r">
                         <a href="../index.html" class="link-style-none nav-item-style ">Home</a>
                     </li>
-                    <li class="list-inline-item margin-l">
-                        <a href="#" class="link-style-none nav-item-style ">Documentation</a>
+                    <li class="list-inline-item margin-l hide-icon">
+                        <a href="#" class="link-style-none nav-item-style">Documentation</a>
                     </li>
                 </ul>
             </div>
             <!-- Right Navigation Section -->
             <div class="nav-section">
-               <ul class="list-style-none nav-section-items">
+               <ul class="list-style-none nav-section-items social-header">
                     <li class="list-inline-item">
                         <a href="https://github.com/deekshithmd" target="_blank" class="nav-icon-link link-style-none">
                             <span class="margin-r"><i class="fab fa-github nav-icon"></i></span>  
@@ -66,6 +69,7 @@
                 <li class="component-item text-md"><a href="#modal" class="link-style-none">Modal</a></li>
                 <li class="component-item text-md"><a href="#grid" class="link-style-none">Simplified Grid</a></li>
                 <li class="component-item text-md"><a href="#list" class="link-style-none">Lists</a></li>
+                <li class="component-item text-md"><a href="#slider" class="link-style-none">Slider</a></li>
             </ul>
         </aside>
         <div class="main">
@@ -1435,6 +1439,40 @@
                     </section>
                 </div>
             </div>
+            <hr>
+            <div class="component-container" id="slider">
+                <h1 class="text-underline">Slider</h1>
+                <p class="text-lg">Slider is used for filtering items based on requirement</p>
+                <div class="component-item-container">
+                    <p class="text-md">Simple price slider is shown here</p>
+                    <section class="sample-container flex">
+                        <div class="range-slider">
+                            <input type="range" name="price" id="price" min="0" max="1000" value="0" onchange="rangeSlide(this.value)">
+                            <i class="fa fa-inr margin-l text-sm">.</i><span class="range-value text-md text-bold">0</span>
+                        </div>
+                        <script src="../components/slider/slider.js"></script>
+                    </section>
+                    <section class="code-section">
+                        <code>
+                            <iframe
+                                src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=base16-dark&wt=sharp&l=auto&width=990&ds=true&dsyoff=0px&dsblur=0px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522range-slider%2522%253E%250A%2509%253Cinput%2520type%253D%2522range%2522%2520name%253D%2522price%2522%2520id%253D%2522price%2522%2520min%253D%25220%2522%2520max%253D%25221000%2522%2520value%253D%25220%2522%2520onchange%253D%2522rangeSlide%28this.value%29%2522%253E%250A%2509%253Ci%2520class%253D%2522fa%2520fa-inr%2520margin-l%2520text-sm%2522%253E.%253C%252Fi%253E%253Cspan%2520class%253D%2522range-value%2520text-md%2520text-bold%2522%253E0%253C%252Fspan%253E%250A%253C%252Fdiv%253E"
+                                style=" border:0; transform: scale(1); overflow:hidden;"
+                                sandbox="allow-scripts allow-same-origin">
+                            </iframe>
+                        </code>
+                    </section>
+                    <p class="text-md text-underline">Javascript code</p>
+                    <section class="code-section">
+                        <code>
+                            <iframe
+                                src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=base16-dark&wt=sharp&l=auto&width=990&ds=true&dsyoff=0px&dsblur=0px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%250Afunction%2520rangeSlide%28value%29%257B%250A%2520%2520%2520%2520document.querySelector%28%2522.range-value%2522%29.innerHTML%253Dvalue%253B%250A%257D%250A"
+                                style="border:0; transform: scale(1); overflow:hidden;"
+                                sandbox="allow-scripts allow-same-origin">
+                            </iframe>
+                        </code>
+                    </section>
+                </div>
+            </div>
         </div>
     </div>
     <footer class="footer">
@@ -1452,6 +1490,6 @@
         </ul>
     </footer>
     <button class="btn btn-float-action go-top"><a class="link-style-none white-symbol" href="#"><i class="fas fa-angle-up"></i></a></button>
-
+    <script src="doc.js"></script>
 </body>
 </html>
