@@ -24,6 +24,11 @@
  * [Navigation](#navigation)
  * [Chips](#chips)
  * [Snackbar](#snackbar)
+ * [Typography](#typography)
+ * [Rating](#rating)
+ * [Modal](#modal)
+ * [Simplified-Grid](#simplified-grid)
+ * [List](#list)
  
  ## Alert
  Alert is used to show some specific messages to the user
