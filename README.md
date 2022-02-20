@@ -97,6 +97,7 @@ Demo: [https://fresh-ui.netlify.app/docsite/doc.html#image](https://fresh-ui.net
 Demo: [https://fresh-ui.netlify.app/docsite/doc.html#input](https://fresh-ui.netlify.app/docsite/doc.html#input)
  ## Navigation
  Navigation bar is one of the important component for website, it cantains items for some important functionalities
+ 
 Demo: [https://fresh-ui.netlify.app/docsite/doc.html#navigation](https://fresh-ui.netlify.app/docsite/doc.html#navigation)
  ## Chips
  Chips is the component used to filter the result or to enter information
@@ -124,9 +125,11 @@ Demo: [https://fresh-ui.netlify.app/docsite/doc.html#snackbar](https://fresh-ui.
 Demo: [https://fresh-ui.netlify.app/docsite/doc.html#typography](https://fresh-ui.netlify.app/docsite/doc.html#typography)
  ## Rating
  Rating is used to get feedback on any product
+ 
 Demo: [https://fresh-ui.netlify.app/docsite/doc.html#rating](https://fresh-ui.netlify.app/docsite/doc.html#rating)
  ## Modal
  Modal is one of the component which get's popped up on clicking with some importatant message
+ 
 Demo: [https://fresh-ui.netlify.app/docsite/doc.html#modal](https://fresh-ui.netlify.app/docsite/doc.html#modal)
  ## Simplified grid
  CSS grid layout is used to structure the content of page. We can structure the grid based on requirement, here in this library there are 7 types of grid classes
@@ -150,5 +153,7 @@ Demo: [https://fresh-ui.netlify.app/docsite/doc.html#grid](https://fresh-ui.netl
 Demo: [https://fresh-ui.netlify.app/docsite/doc.html#list](https://fresh-ui.netlify.app/docsite/doc.html#list)
  ## Slider
  Slider is normally used to filter content based on requirement. In this component library Price range slider is showcased
+ 
+Demo:[https://fresh-ui.netlify.app/docsite/doc.html#slider](https://fresh-ui.netlify.app/docsite/doc.html#slider)
 
  ![Component Library](https://github.com/deekshithmd/FreshUI-Component-Library/blob/navigation-chips-snackbar/components/assets/images/ComponetLibrary.gif)
