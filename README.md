@@ -93,5 +93,32 @@
  There are 2 types of snackbar available in this library
  * Basic snackbar
  * Stacked snackbar
+ ## Typography
+ Typography is used to style the text based on the requirement. The different typography styles available in this 
+ * Headings
+ * Different sized texts
+ * Grey colored text
+ * aligned text
+ * Special styled text
+ ## Rating
+ Rating is used to get feedback on any product
+ ## Modal
+ Modal is one of the component which get's popped up on clicking with some importatant message
+ ## Simplified grid
+ CSS grid layout is used to structure the content of page. We can structure the grid based on requirement, here in this library there are 7 types of grid classes
+ * 2 column grid
+ * 3 column grid
+ * 4 column grid
+ * 70:30 grid
+ * 30:70 grid
+ * 2 row grid
+ * 3 row grid
+ ## List
+ List is used to display items in different styles like bullet, square, disc, alphabet and number
+ Types of lists available in this library are
+ * Unordered list
+ * Ordered list
+ * Input list
+ * Stacked list 
 
  ![Component Library](https://github.com/deekshithmd/FreshUI-Component-Library/blob/navigation-chips-snackbar/components/assets/images/ComponetLibrary.gif)
