@@ -2,6 +2,10 @@
     position: relative;
 }
 
+.badge-container i{
+    color:var(--primary-text-color);
+}
+
 .status-badge-avatar{
     position: absolute;
     width: 30%;

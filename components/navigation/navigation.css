@@ -52,7 +52,7 @@
 
 .bg-red{
     background-color: var(--red-background);
-    color: white;
+    color: var(--white-text-color);
 }
 
 .avatar-text-xs{

@@ -1,15 +1,4 @@
-const hamburger=document.querySelector(".hamburger");
-const list=document.querySelector(".sidebar");
-const dark=document.querySelector(".dark-t");
-
-hamburger.addEventListener('click',()=>{
-    if(list.style.display === "none"){
-        list.style.display="flex"
-    }   
-    else{
-        list.style.display="none"
-    }
-})
+const dark=document.querySelector(".dark");
 
 dark.addEventListener('click',()=>{
     if(dark.classList.contains("fa-sun")){
