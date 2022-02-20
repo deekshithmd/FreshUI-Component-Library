@@ -29,6 +29,7 @@
  * [Modal](#modal)
  * [Simplified-Grid](#simplified-grid)
  * [List](#list)
+ * [Slider](#slider)
  
  ## Alert
  Alert is used to show some specific messages to the user
@@ -120,5 +121,7 @@
  * Ordered list
  * Input list
  * Stacked list 
+ ## Slider
+ Slider is normally used to filter content based on requirement. In this component library Price range slider is showcased
 
  ![Component Library](https://github.com/deekshithmd/FreshUI-Component-Library/blob/navigation-chips-snackbar/components/assets/images/ComponetLibrary.gif)
