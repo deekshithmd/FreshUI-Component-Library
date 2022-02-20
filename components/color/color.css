@@ -2,12 +2,15 @@
     --primary-color: #0bb32f;
     --secondary-color: #f8962e;
 
-    --primary-text-color: #272626;
-    --secondary-text-color: #ffffff;
+    --primary-black-text-color: #272626;
+    --secondary-white-text-color: #ffffff;
     --snackbar-text-color:#7da7f7;
     --grey-color-text: #808080;
+    --white-text-color: #ffffff;
+    --black-text-color: #000000;
 
-    --background-color: #eeeeee;
+    --background-color-light: #eeeeee;
+    --background-color-dark: #2c2b2c;
 
     --primary-background:#b1edf1;
     --primary-alert-text-color:#2a8bdb;
@@ -38,4 +41,16 @@
     --black-background: #000000;
     --modal-background: rgb(0, 0, 0,0.3);
     --white-background: #ffffff;
+}
+
+.light-theme{
+    --primary-text-color: var(--primary-black-text-color);
+    --secondary-text-color: var(--secondary-white-text-color);
+    --background-color: var(--background-color-light);
+}
+
+.dark-theme{
+    --primary-text-color: var(--secondary-white-text-color);
+    --secondary-text-color: var(--primary-black-text-color);
+    --background-color: var(--background-color-dark);
 }

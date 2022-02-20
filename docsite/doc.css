@@ -13,6 +13,10 @@
     grid-area: header;
 }
 
+.hamburger{
+    display: none;
+}
+
 .sidebar{
     grid-area: sidebar;
     padding: 1.5rem;
@@ -100,5 +104,50 @@
     position: fixed;
     right: 10px;
     bottom: 10px;
+}
+
+@media only screen and (max-width: 600px){
+    
+    .main{
+        width: 100vw;
+    }
+
+    .hamburger{
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        height: auto;
+    }
+
+    .grid-container{
+        height: auto;
+        width: 100vw;
+        display: grid;
+        grid-template-columns: 1fr ;
+        grid-template-areas: 
+            'header'
+            'main'
+            'main';
+    }
+
+    .sidebar{
+        height: fit-content;
+        width: auto;
+        top: 9rem;
+        left: 0;
+        display: none;
+        justify-content: center;
+        align-items: center;
+        background-color: var(--secondary-color);
+        position:fixed;
+        z-index: 1;
+    }
+
+    .nav-bar{
+        position: fixed;
+        top: 0;
+        background-color: var(--background-color);
+        z-index: 1;
+    }
 }
 

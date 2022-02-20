@@ -43,6 +43,7 @@
 
 .btn-outline-primary{
     background-color: transparent;
+    color: var(--primary-text-color);
     border: 2px solid var(--primary-color);
 }
 
@@ -53,6 +54,7 @@
 
 .btn-outline-secondary{
     background-color: transparent;
+    color: var(--primary-text-color);
     border: 2px solid var(--secondary-color);
 }
 
@@ -62,7 +64,7 @@
 }
 
 .btn-outline-disabled{
-    opacity: 0.5;
+    opacity: 0.8;
     color: var(--primary-text-color);
     border: 2px solid var(--primary-color)
 }
@@ -136,6 +138,7 @@
 
 .toggle-btn{
     border: none;
+    background-color: var(--background-color);
 }
 
 .switch{
@@ -152,7 +155,7 @@
     right: 0;
     left: 0;
     bottom: 0;
-    background-color: rgb(153, 150, 150);
+    background-color: var(--light-black-background);
     transition: .4s;
     border-radius: 3.5rem;
 }
@@ -168,7 +171,7 @@
     width: 2rem;
     left: 5px;
     bottom: 4px;
-    background-color: white;
+    background-color: var(--background-color);
     transition: .4s;
     border-radius: 2rem;
 }
