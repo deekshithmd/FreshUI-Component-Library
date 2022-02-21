@@ -3,7 +3,8 @@
     justify-content: space-between;
     align-items: center;
     width: 40rem;
-    background-color: var(--background-black);
+    background-color: var(--snackbar-background);
+    border: 1px solid var(--border-white);
     color: var(--white-text-color);
     border-radius: 5px;
     padding: 1rem;
@@ -39,11 +40,12 @@
     justify-content: center;
     width: 40rem;
     height: 10rem;
-    background-color:  var(--background-black);
+    background-color:  var(--snackbar-background);
     color: var(--white-text-color);
     border-radius: 5px;
     padding: 1rem 2rem; 
-    font-size: 1rem;      
+    font-size: 1rem;    
+    border: 1px solid var(--border-white) ; 
 }
 
 .actions{
