@@ -1,5 +1,5 @@
-const hamburger=document.querySelector(".hamburger");
-const list=document.querySelector(".sidebar");
+// const hamburger=document.querySelector(".hamburger");
+// const list=document.querySelector(".sidebar");
 const dark=document.querySelector(".dark-t");
 
 if(localStorage.getItem("dark")==="dark-theme"){
@@ -11,14 +11,14 @@ else{
     document.body.classList.add("light-theme")
 }
 
-hamburger.addEventListener('click',()=>{
-    if(list.style.display === "none"){
-        list.style.display="flex"
-    }   
-    else{
-        list.style.display="none"
-    }
-})
+// hamburger.addEventListener('click',()=>{
+//     if(list.style.display === "none"){
+//         list.style.display="flex"
+//     }   
+//     else{
+//         list.style.display="none"
+//     }
+// })
 
 dark.addEventListener('click',()=>{
     if(dark.classList.contains("fa-sun")){

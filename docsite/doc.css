@@ -1,27 +1,35 @@
-.grid-container{
+.grid-container {
     height: auto;
     width: 100vw;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    grid-template-areas: 
-            'header header header header header'
-            'sidebar main main main main'
-            'sidebar main main main main';
+    grid-template-areas:
+        'header header header header header'
+        'sidebar main main main main'
+        'sidebar main main main main';
 }
 
-.nav-bar{
+.nav-bar {
     grid-area: header;
 }
 
-.hamburger{
+.hamburger {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+}
+
+#check {
     display: none;
 }
 
-.sidebar{
+.sidebar {
     grid-area: sidebar;
     padding: 1.5rem;
     border-right: 1px solid var(--primary-color);
     overflow-x: hidden;
+    display: block;
     height: auto;
     overflow-y: scroll;
     height: 100vh;
@@ -29,125 +37,138 @@
     top: 0;
 }
 
-.main{
+.main {
     grid-area: main;
 }
 
-.component-item{
+.component-item {
     width: 100%;
-    padding:1.5rem 0;
+    padding: 1.5rem 0;
     font-weight: 400;
 }
 
-.component-item:hover{
+.component-item:hover {
     font-weight: 600;
     transform: scale(1.05) translateX(1rem);
     transition: .7s;
 }
 
-.footer{
+.footer {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     min-height: 10rem;
-    min-width: 100%;
+    width: 100%;
     padding-top: 3rem;
     margin: 0;
     background-color: var(--light-black-background);
     bottom: 0;
 }
 
-.brand-style{
+.brand-style {
     font-family: 'Calistoga', cursive;
     color: var(--primary-color);
 }
 
-.component-item-container{
+.component-item-container {
     border-radius: 10px;
     border: 2px solid var(--primary-color);
     padding: 10px 20px;
     margin: 1rem auto;
 }
 
-.sample-container{
+.sample-container {
     border-radius: 10px;
     box-shadow: 0 0 5px var(--light-black-background);
     padding: 20px;
     height: auto;
 }
 
-.code-section{
-    box-sizing:border-box;
+.code-section {
+    box-sizing: border-box;
     width: 100%;
     max-height: 300px;
-    margin-top:3rem;
+    margin-top: 3rem;
     padding: 0;
     overflow-x: hidden;
 }
 
-.code-section iframe{
+.code-section iframe {
     width: 100%;
     border-radius: 10px;
 }
 
-.footer-text{
+.footer-text {
     color: var(--secondary-text-color);
 }
 
-.footer-social-icons i{
+.footer-social-icons i {
     color: var(--secondary-text-color)
 }
 
-.go-top{
+.go-top {
     position: fixed;
     right: 10px;
     bottom: 10px;
 }
 
-@media only screen and (max-width: 600px){
-    
-    .main{
+.responsive-sidebar {
+    display: none;
+}
+
+@media only screen and (max-width: 820px) {
+
+    .main {
+        position: sticky;
+        top: 8rem;
         width: 100vw;
     }
 
-    .hamburger{
-        display: inline-flex;
-        justify-content: center;
-        align-items: center;
-        height: auto;
-    }
-
-    .grid-container{
+    .grid-container {
         height: auto;
         width: 100vw;
         display: grid;
-        grid-template-columns: 1fr ;
-        grid-template-areas: 
+        grid-template-columns: 1fr;
+        grid-template-areas:
             'header'
             'main'
             'main';
     }
 
-    .sidebar{
+    .hamburger {
+        display: inline-flex;
+    }
+
+    .responsive-sidebar {
+        position: fixed;
+        display: flex;
+        flex-direction: column;
         height: fit-content;
+        padding: 2rem;
         width: auto;
-        top: 9rem;
-        left: 0;
-        display: none;
+        top: 8rem;
+        left: -100%;
         justify-content: center;
         align-items: center;
         background-color: var(--secondary-color);
-        position:fixed;
+        position: fixed;
         z-index: 1;
     }
 
-    .nav-bar{
+    .footer{
+        display: none;
+    }
+
+    #check:checked~.responsive-sidebar {
+        left: 0;
+    }
+
+    .nav-bar {
         position: fixed;
         top: 0;
         background-color: var(--background-color);
         z-index: 1;
     }
 }
-
